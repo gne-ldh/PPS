@@ -10,7 +10,7 @@ followings:
 gcc -o main main.c
 ```
 
-2. Execute using
+1. Execute using
 
 ```
 ./main
