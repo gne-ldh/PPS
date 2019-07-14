@@ -6,12 +6,9 @@ followings:
 
 1. Compile using
 
-```
-gcc -o main main.c
-```
+        gcc -o main main.c
 
 1. Execute using
 
-```
-./main
-```
+        ./main
+        
