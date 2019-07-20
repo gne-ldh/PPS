@@ -40,7 +40,7 @@ Pre-requisites: _*None*_
     - syntax and Logical Errors in compilation
     - object and executable code
 
-        (2 lectures).
+          (2 lectures).
 
 ## Unit 2: Arithmetic expressions and precedence (2 lectures)
 
