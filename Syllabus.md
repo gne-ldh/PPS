@@ -23,7 +23,7 @@ Pre-requisites: _*None*_
     - Compilers
     - etc.
 
-        (1 lecture).
+            (1 lecture).
 
 1. Idea of Algorithm:
     - Steps to solve logical and numerical problems.
@@ -31,7 +31,7 @@ Pre-requisites: _*None*_
         - Flowchart
         - Pseudocode
 
-            (1 lecture).
+                (1 lecture).
 
 1. From algorithms to programs:
     - source code
