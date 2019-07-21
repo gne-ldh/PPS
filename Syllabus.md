@@ -1,14 +1,12 @@
 Course code: _*ESC-18104*_
 
-Category: _*Engineering Science Course*_
-
-Credits: _*3*_
-
-Course scheme: _*L 3 / T 1 /*_
-
-Contact hours: _*40*_
-
-Pre-requisites: _*None*_
+| Item | Value |
+|:---|:---|
+| Category: | _*Engineering Science Course*_ |
+| Credits: | _*3*_ |
+| Course scheme: | _*L 3 / T 1*_ |
+| Contact hours: | _*40*_ |
+| Pre-requisites: | _*None*_ |
 
 ## Unit 1: Introduction to Programming (4 lectures)
 
