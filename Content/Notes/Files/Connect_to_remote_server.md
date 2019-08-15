@@ -12,7 +12,7 @@ allow you to connect the server.
 | Item | Value |
 | ---:|:--- |
 | GNU/Linux Server | code.gdy.club |
-| User ID | <YourRollNumber> |
+| User ID | YourRollNumber |
 | Password | If you don't know, contact office of Applied Science Dept. |
 | Port | 22 |
 
