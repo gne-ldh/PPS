@@ -34,14 +34,15 @@ to cutmomisation). Using GUI, you may also lauch it.
 
 Further help may be taken from: [WikiHow](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu)
 
-Once you have opened terminal, which is usually a black rectangular are with
-blinking cusor (of shape underscore i.e.  "_"), after some text like
-"hs@rai:~$ ", where "hs" is user on local computer named "rai", like:
+Once you have opened terminal, which is usually a big black rectangular
+area, in which there is a small solid rectangle (of the size of a single
+character), after some text like "hs@rai:~$ ", where "hs" is user on local
+computer named "rai", like:
 
-	hs@rai:~$ _
+	hs@rai:~$ 
 
-At the posiiton of cursor ("_"), you may type from keyboard. Type following
-command. 
+At the position of cursor (Solid Rectangle), you may type from keyboard. 
+Type following command.
 
 	hs@rai:~$ ssh hsrai@code.gdy.club
 
