@@ -24,11 +24,11 @@ computers avaliable for your laboratory work.
 
 If you wish to connect from your mobile, or desktop, then Visit [mosh's
 Download page](https://mosh.org/#getting). Follow instructions to get the
-softare and to install it. You may also install it as "Chrome" browser's
+software and to install it. You may also install it as "Chrome" browser's
 extension. Visit [Chrome Store](https://chrome.google.com/webstore/detail/mosh/ooiklbnjmhbcgemelgfhaeaocllobloj)
 for further information.
 
-From Linux Desktop / Laptop, open "Comman line Terminar" (also called
+From Linux Desktop / Laptop, open "Command line Terminal" (also called
 console), using Ctrl+Atl+t (may vary depending on Linux Distribution and due
 to cutmomisation). Using GUI, you may also lauch it.
 
@@ -63,14 +63,14 @@ presented with following text:
 	Are you sure you want to continue connecting (yes/no)?
 
 
-Now you are supposed to read it very carefully, if yope "y" or "n", then you
-will be surposed by getting messages like:
+Now you are supposed to read it very carefully, if yoy type "y" or "n", then
+you will be surprised by getting messages like:
 
 	Are you sure you want to continue connecting (yes/no)? n
 	Please type 'yes' or 'no': y
 	Please type 'yes' or 'no': yes
 
-So you need to type three letters (characters), which are y e s. Sinhle
+So you need to type three letters (characters), which are y e s. Single
 character will not work.
 
 After this, once connection established (make sure Internet is wroking, and
