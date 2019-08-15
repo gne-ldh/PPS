@@ -18,13 +18,13 @@ allow you to connect the server.
 
 ## How to access remote server
 
-Use "mosh" software. In laboratories, teacher will tell you the instruction
+Use `mosh` software. In laboratories, teacher will tell you the instruction
 how to connect to remote server. Software will be already installed in
 computers avaliable for your laboratory work.
 
 If you wish to connect from your mobile, or desktop, then Visit [mosh's
 Download page](https://mosh.org/#getting). Follow instructions to get the
-software and to install it. You may also install it as "Chrome" browser's
+software and to install it. You may also install it as `Chrome` browser's
 extension. Visit [Chrome Store](https://chrome.google.com/webstore/detail/mosh/ooiklbnjmhbcgemelgfhaeaocllobloj)
 for further information.
 
@@ -36,8 +36,8 @@ Further help may be taken from: [WikiHow](https://www.wikihow.com/Open-a-Termina
 
 Once you have opened terminal, which is usually a big black rectangular
 area, in which there is a small solid rectangle (of the size of a single
-character), after some text like "hs@rai:~$ ", where "hs" is user on local
-computer named "rai", like:
+character), after some text like `hs@rai:~$ `, where `hs` is user on local
+computer named `rai`, like:
 
 	hs@rai:~$ 
 
@@ -46,7 +46,7 @@ Type following command.
 
 	hs@rai:~$ ssh hsrai@code.gdy.club
 
-"hs@rai:~" will be there already, and you need to type only:
+`hs@rai:~` will be there already, and you need to type only:
 
 	ssh <UserID>@<ServerName>
 
@@ -63,7 +63,7 @@ presented with following text:
 	Are you sure you want to continue connecting (yes/no)?
 
 
-Now you are supposed to read it very carefully, if yoy type "y" or "n", then
+Now you are supposed to read it very carefully, if you type `y` or `n`, then
 you will be surprised by getting messages like:
 
 	Are you sure you want to continue connecting (yes/no)? n
