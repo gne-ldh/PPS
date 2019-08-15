@@ -15,219 +15,216 @@ contain your UserID and ServerName.
 
 It may be:
 
-	1912015@computer-centre:~$ 
+	19123015@computer-centre:~$ 
 
 or
 
 	hsrai@Code:~$
 
-where before "@" is your UserID and after "@" is the name of Server where
+where before `@` is your UserID and after `@` is the name of Server where
 you logged-in.
 
+On computers, information is stored in files and files are stored in folder
+(also called directory). A folder may contain files and / or folders.
+
+You may order (or request, if you are a civilised) to present you a list
+(shortened as `ls`) of files and directories in in the current folder.  To
+do so, we issue following command (you need to type only `ls` and then hit
+`Enter`).
+
+	hsrai@CC:~$ ls
+	public_html
+
+You are in a relative very thinly populated area.  There is just one
+directory (folder) with name public_html.  You may create folder in the
+current folder or in folder `public_html`, to manage your files, which you
+will crete yourself or download from the Internet.
+
+To move from current directory to `public_html`, issue following command
+(order or request) to the computer:
+
+	hsrai@CC:~$ cd public_html
+
+Because you want to change directory, so you need to isse short-cut of
+"Change Directory" as `cd` (we know that you love short-cuts).  After `cd`
+you need give name of the directory, where you wish to move.
+
+In `public_html`, issue following commands:
+
+	hsrai@CC:~/public_html$ mkdir Code
+	hsrai@CC:~/public_html$ ls
+	hsrai@CC:~/public_html$ cd Code
+	hsrai@CC:~/public_html/Code$ git clone https://github.com/gne-ldh/PPS.git
+
+If you forked above repository in your account (19123015, say) then above
+link (URL) may be `https://github.com/19123015/PPS.git
+
+On issuing `git clone` command as above, you will see some text (as shown
+below, actual text might be different. Don't try to understand it, just read
+it and move ahead) appearing on screen:
+
+	Cloning into 'PPS'...
+	remote: Enumerating objects: 71, done.
+	remote: Counting objects: 100% (71/71), done.
+	remote: Compressing objects: 100% (66/66), done.
+	remote:nTotale71s(delta 31),7reused 14 (delta 3), pack-reused 0
+	Unpacking objects: 100% (71/71), done.
+
+See content of directory with the use of list command, i.e. `ls`, and then
+move to new created directory, named `PPS`, with the help of `cd` command.
+
+	hsrai@CC:~/public_html/Code$ ls
+	PPS
+	hsrai@CC:~/public_html/Code$ cd PPS/
+	hsrai@CC:~/public_html/Code/PPS$ ls
+	hsrai@CC:~/public_html/Code/PPS$ pwd
+	hsrai@CC:~/public_html/Code/PPS
+
+The text you see, something like `hsrai@CC:~public_html/Code/PPS$` is called
+Prompt String (PS), and there are more than one such string, so we have PS1,
+PS2 and PS3. Let us change this PS1 and have a short and clean. To do this
+use following command:
+
+	hsrai@CC:~/public_html/Code/PPS$ PS1="|> "
+
+It will result in PS1 as `|> `, and now we issue `ls` command, it will look
+like:
+
+	|> ls
+	About  Content	LICENSE  README.md
+
+There are teo directories, and two files. The complete organisation of files
+and folders (Directories) may be visualised, by using `tree` command:
 
 
-hsrai@CC:~$ ls
-public_html  typescript
-hsrai@CC:~$ cd public_html/
-hsrai@CC:~/public_html$ mkdir Code
-hsrai@CC:~/public_html$ cd Code/
-hsrai@CC:~/public_html/Code$ git clone https://github.com/gne-ldh/PPS.git
-ls https://github.com/ranjodh-kaur/PPS.git
-ls: cannot access 'https://github.com/ranjodh-kaur/PPS.git': No such file or directory
-hsrai@CC:~/public_html/Code$ git clone https://github.com/gne-ldh/PPS.git
-Cloning into 'PPS'...
-remote: Enumerating objects: 71, done.
-remote: Counting objects: 100% (71/71), done.
-remote: Compressing objects: 100% (66/66), done.
-remote:nTotale71s(delta 31),7reused 14 (delta 3), pack-reused 0
-Unpacking objects: 100% (71/71), done.
-hsrai@CC:~/public_html/Code$ ls
-PPS
-hsrai@CC:~/public_html/Code$ cd PPS/
-hsrai@CC:~/public_html/Code/PPS$ ls
-About.md  L01		  LICENSE     README.md
-Books.md  LabSyllabus.md  Outcome.md  Syllabus.md
-hsrai@CC:~/public_html/Code/PPS$ wget https://github.com/gne-ldh/Week01/archive/master.zip
-bash: wget: command not found
-hsrai@CC:~/public_html/Code/PPS$ wget https://github.com/gne-ldh/Week01/archive/master.zip
---2019-08-15 07:46:10--  https://github.com/gne-ldh/Week01/archive/master.zip
-Resolving github.com (github.com)... 13.234.176.102, 64:ff9b::dea:b066
-Connecting to github.com (github.com)|13.234.176.102|:443... connected.
-HTTP request sent, awaiting response... 302 Found
-Location: https://codeload.github.com/gne-ldh/Week01/zip/master [following]
---2019-08-15 07:46:10--  https://codeload.github.com/gne-ldh/Week01/zip/master
-Resolving codeload.github.com (codeload.github.com)... 13.233.43.20, 64:ff9b::de9:2b14
-Connecting to codeload.github.com (codeload.github.com)|13.233.43.20|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/zip]
-Saving to: ‘master.zip’
+	|> tree
+	.
+	├── About
+	│   ├── About.md
+	│   ├── Books.md
+	│   ├── LabSyllabus.md
+	│   ├── Outcome.md
+	│   └── Syllabus.md
+	├── Content
+	│   ├── Extra
+	│   │   └── L01
+	│   │       ├── Application
+	│   │       │   └── L01.c
+	│   │       ├── main.c
+	│   │       ├── Makefile
+	│   │       └── README.md
+	│   ├── Notes
+	│   │   ├── Files
+	│   │   │   ├── Compiling_and_running_1st_program.md
+	│   │   │   ├── Connect_to_remote_server.md
+	│   │   │   ├── hsr.txt
+	│   │   │   └── Tree.txt
+	│   │   ├── README.md
+	│   └── Programms
+	│  	└── Week01
+	│  	    ├── build
+	│  	    │   └── README.md
+	│  	    ├── CMakeLists.txt
+	│  	    ├── include
+	│  	    │   └── week01.h
+	│  	    ├── README.md
+	│  	    └── src
+	│  		├── application
+	│  		│   ├── Bank
+	│  		│   │   ├── 101LetUsC.m
+	│  		│   │   ├── 102Address.m
+	│  		│   │   ├── 103AddressOnePuts.m
+	│  		│   │   ├── 104AddressOnePutsContentMultiLine.m
+	│  		│   │   ├── 105AddressOnePutsContentMultiLineBetter.m
+	│  		│   │   ├── 106Punishment.m
+	│  		│   │   ├── 107MultiplicationTable5.m
+	│  		│   │   ├── 108MultiplicationTableMultiLine.m
+	│  		│   │   └── message.m
+	│  		│   └── message.m
+	│  		└── main.c
+	├── LICENSE
+	├── README.md
+	└── typeScript2.txt
+	
+	14 directories, 34 files
 
-master.zip		[<<=>		     ]	 2.07K	--.-KB/s    in 0.001s
+Let us move to source code of C programming files.
 
-2019-08-15 07:46:11 (4.04 MB/s) - ‘master.zip’ saved [2119]
+	|> cd Content/Programms/Week01/src/application/
+	|> cat message.m
+	puts("Let us C");|>
 
-hsrai@CC:~/public_html/Code/PPS$ ls
-About.md  L01		  LICENSE     Outcome.md  Syllabus.md
-Books.md  LabSyllabus.md  master.zip  README.md
-hsrai@CC:~/public_html/Code/PPS$ mkdir Week01
-hsrai@CC:~/public_html/Code/PPS$ cd Week01/
-hsrai@CC:~/public_html/Code/PPS/Week01$ unzip ../master.zip
-bash: unzip: command not found
-hsrai@CC:~/public_html/Code/PPS/Week01$ unzip ../master.zip
-Archive:  ../master.zip
-088e9364f6e30f0ed5de59d43b8e9f3ae2f5a7e1
-   creating: Week01-master/
-  inflating: Week01-master/CMakeLists.txt
-  inflating: Week01-master/README.md
-   creating: Week01-master/build/
- extracting: Week01-master/build/README.md
-   creating: Week01-master/include/
- extracting: Week01-master/include/week01.h
-   creating: Week01-master/src/
-   creating: Week01-master/src/application/
- extracting: Week01-master/src/application/message.m
-  inflating: Week01-master/src/main.c
-hsrai@CC:~/public_html/Code/PPS/Week01$ cd ..
-hsrai@CC:~/public_html/Code/PPS$ ls
-About.md  L01		  LICENSE     Outcome.md  Syllabus.md
-Books.md  LabSyllabus.md  master.zip  README.md   Week01
-.avleen_takkar@computer-centre:~/public_html/Code/PPS$ mv Week01/Week01-master/.
-hsrai@CC:~/public_html/Code/PPS$ hsrai@CC:~/public_html/Code/PPS$ ls
-About.md  L01		  LICENSE     Outcome.md  Syllabus.md
-Books.md  LabSyllabus.md  master.zip  README.md   Week01
-hsrai@CC:~/public_html/Code/PPS$ mv ../Week01-master/.
-hsrai@CC:~/public_html/Code/PPS$ hsrai@CC:~/public_html/Code/PPS$ ls
-About.md  L01		  LICENSE     Outcome.md  Syllabus.md  Week01-master
-Books.md  LabSyllabus.md  master.zip  README.md   Week01
-hsrai@CC:~/public_html/Code/PPS$ rm -rf Week01
-hsrai@CC:~/public_html/Code/PPS$ hsrai@CC:~/public_html/Code/PPS$ ls
-About.md  L01		  LICENSE     Outcome.md  Syllabus.md
-Books.md  LabSyllabus.md  master.zip  README.md   Week01-master
-hsrai@CC:~/public_html/Code/PPS$ cd Week01-master/
-hsrai@CC:~/public_html/Code/PPS/Week01-master$ ls
-build  CMakeLists.txt  include	README.md  src
-hsrai@CC:~/public_html/Code/PPS/Week01-master$ cd ..
-hsrai@CC:~/public_html/Code/PPS$ mv Week01-master/Week01-master/
+Here `message.m` is file, containing a part of C code. The code in this file
+is responsible to display message `Let us C` on screen. Let us try the
+procedure to convert this in to machine language (with the process called
+compilation). We will keep source code and files generated by compilation
+process in separate directories. So move to `build` directory, which will
+contain compilation files.
 
-hsrai@CC:~/public_html/Code/PPS$ cd Week01/
-hsrai@CC:~/public_html/Code/PPS/Week01$ hsrai@CC:~/public_html/Code/PPS/Week01$ ls
-build  CMakeLists.txt  include	README.md  src
-hsrai@CC:~/public_html/Code/PPS/Week01$ ls build/
-README.md
-hsrai@CC:~/public_html/Code/PPS/Week01$ tree
-bash: tree: command not found
-hsrai@CC:~/public_html/Code/PPS/Week01$ tree
-.
-├── build
-│   └── README.md
-├── CMakeLists.txt
-├── include
-│   └── week01.h
-├── README.md
-└── src
-    ├── application
-    │   └── message.m
-    └── main.c
+	|> cd ../../build/
+	|> cmake ..
 
-4 directories, 6 files
-revleen_takkar@computer-centre:~/public_html/Code/PPS/Week01$ cat README.md | mo
-# Week01
-C as Problem Sovling Tool: Week01
+This will do a lot of hard work for you, and display what it is doing. Just
+read it casually and move ahead. It may take about 42 seconds.
 
-### Compiling code
+	-- The C compiler identification is GNU 8.3.0
+	-- The CXX compiler identification is GNU 8.3.0
+	-- Check for working C compiler: /usr/bin/cc
+	-- Check for working C compiler: /usr/bin/cc -- works
+	-- Detecting C compiler ABI info
+	-- Detecting C compiler ABI info - done
+	-- Detecting C compile features
+	-- Detecting C compile features - done
+	-- Check for working CXX compiler: /usr/bin/c++
+	-- Check for working CXX compiler: /usr/bin/c++ -- works
+	-- Detecting CXX compiler ABI info
+	-- Detecting CXX compiler ABI info - done
+	-- Detecting CXX compile features
+	-- Detecting CXX compile features - done
+	-- Configuring done
+	-- Generating done
+	-- Build files have been written to: build
+	
+The next step is to issue `make` command:
+	
+	|> make
+	Scanning dependencies of target main
+	[ 50%] Building C object CMakeFiles/main.dir/src/main.o
+	src/main.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+	 main()
+	 ^~~~
+	[100%] Linking C executable main
+	[100%] Built target main
 
-  After Cloning this repostory, In order to Compile code follow following steps
-in project directory linux:
 
-1. Compile using
+It showed warning, but still, the compilation was successful. To execute the
+code, do as follow:
 
-	cd build
-	cmake ..
-	make
+	|> ./main
 
-1. Execute using
+It will produce output as:
 
-	./main
+	Let us C
 
-hsrai@CC:~/public_html/Code/PPS/Week01$ cd build/
-hsrai@CC:~/public_html/Code/PPS/Week01/build$ cmake ..
--- The C compiler identification is GNU 8.3.0
--- The CXX compiler identification is GNU 8.3.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
-^C
-hsrai@CC:~/public_html/Code/PPS/Week01/build$ ls
-CMakeFiles  README.md
-hsrai@CC:~/public_html/Code/PPS/Week01/build$ ecmake...
+With this you are able to compile and run (execute) your 1st computer
+program.
 
--- The C compiler identification is GNU 8.3.0
--- The CXX compiler identification is GNU 8.3.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: /home/savleen_takkar/public_html/Code/PPS/Week01/build
+You may wish to play with this, by changing the message. Use editor of your
+choice. It may be vim, joe, pico or any other as per your liking. We used in
+following example, pico. Change message, exit editor and save file, while
+exiting. 
 
-real	0m41.539s
-user	0m9.685s
-sys	0m3.267s
-hsrai@CC:~/public_html/Code/PPS/Week01/build$ cat ../README.md
-# Week01
-C as Problem Sovling Tool: Week01
+	pico ../src/application/message.m
+	
+After this, you need to compile it and run again to see the change in
+action. Do as follow:
 
-### Compiling code
+	|> make
+	|> ./main
 
-  After Cloning this repostory, In order to Compile code follow following steps in project directory linux:
+The first command is to compile and second is to execute the code.
 
-1. Compile using
+Good going till know. Take break, re-read above, if required. Change message
+again, compile and execute the code.
 
-	cd build
-	cmake ..
-	make
-
-1. Execute using
-
-	./main
-
-hsrai@CC:~/public_html/Code/PPS/Week01/build$ make
-Scanning dependencies of target main
-[ 50%] Building C object CMakeFiles/main.dir/src/main.o
-/home/savleen_takkar/public_html/Code/PPS/Week01/src/main.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
- main()
- ^~~~
-[100%] Linking C executable main
-[100%] Built target main
-hsrai@CC:~/public_html/Code/PPS/Week01/build$ ./main
-Let us C
-hsrai@CC:~/public_html/Code/PPS/Week01/build$ hsrai@CC:~/public_html/Code/PPS/Week01/build$ cd ..
-hsrai@CC:~/public_html/Code/PPS/Week01$ ls
-build  CMakeLists.txt  include	README.md  src
-hsrai@CC:~/public_html/Code/PPS/Week01$ cd -
-/home/savleen_takkar/public_html/Code/PPS/Week01/build
-hsrai@CC:~/public_html/Code/PPS/Week01/build$ cd ../src
-hsrai@CC:~/public_html/Code/PPS/Week01/src$ ls
-application  main.c
-hsrai@CC:~/public_html/Code/PPS/Week01/src$ cd application/
-hsrai@CC:~/public_html/Code/PPS/Week01/src/application$ ls
-message.m
-tamessage.mkar@computer-centre:~/public_html/Code/PPS/Week01/src/application$ ca
-dirsBankt us C");hsrai@CC:~/public_html/Code/PPS/Week01/src/application$ mk
+Have fun!
