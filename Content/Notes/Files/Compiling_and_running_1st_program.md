@@ -24,6 +24,38 @@ or
 where before `@` is your UserID and after `@` is the name of Server where
 you logged-in.
 
+Before we do some real work, we will activate another nice tool. First time,
+you login, issue following command:
+
+	tmux
+
+Now you work. Say after doing a lot work, you wish to logout and terminate
+connection to remote server. Then you need to de-attach your session, by:
+
+	^b d
+
+That mean press Ctrl, hold it and press b, release both, and then press d.
+
+Then you can type exit or Ctrl+d to logout and disconnect from remote
+server.
+
+Next day, you wish to continue your work. Connect and login, using:
+
+	mosh UserID@code.gdy.club
+
+Now you need to type:
+
+	tmux attach
+
+and you will see you will get where you lefy your session. That is the
+advantage of tmux.
+
+Unless server is rebooted (which happen rarely), you can get your session by
+`tmux attach`.
+
+Even if you get interrupted, because of bad Internet, you can get tour
+session back by `tmux attach`. 
+
 On computers, information is stored in files and files are stored in folder
 (also called directory). A folder may contain files and / or folders.
 
