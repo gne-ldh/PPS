@@ -81,12 +81,16 @@ password:
 	Creating directory '/home/hsrai'.
 	Linux computer-centre 4.19.0-5-amd64 #1 SMP Debian 4.19.37-5+deb10u1 (2019-07-19) x86_64
 	
-	The programs included with the Debian GNU/Linux system are free software;
-	the exact distribution terms for each program are described in the
-	individual files in /usr/share/doc/*/copyright.
+	Welcome to Coding Server maintained by Computer Centre of GNDEC, Ludhiana,
+	Specifically for the students of 1st year for their course:
+	                       =================================
 	
-	Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-	permitted by applicable law.
+	                        Programming for Problem Solving
+	
+	                       =================================
+	To know how to work, read:
+	
+	 https://github.com/gne-ldh/PPS/blob/master/Content/Notes/README.md
 	
 	
 	hsrai@computer-centre:~$ ls
