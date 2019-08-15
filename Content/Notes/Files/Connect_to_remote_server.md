@@ -30,7 +30,7 @@ for further information.
 
 From Linux Desktop / Laptop, open "Command line Terminal" (also called
 console), using Ctrl+Atl+t (may vary depending on Linux Distribution and due
-to cutmomisation). Using GUI, you may also lauch it.
+to customisation). Using GUI, you may also launch it.
 
 Further help may be taken from: [WikiHow](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu)
 
@@ -73,7 +73,7 @@ you will be surprised by getting messages like:
 So you need to type three letters (characters), which are y e s. Single
 character will not work.
 
-After this, once connection established (make sure Internet is wroking, and
+After this, once connection established (make sure Internet is working, and
 there is not typing error/mistake), remote server will request you for
 password:
 
