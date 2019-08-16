@@ -101,7 +101,7 @@ If will display something about itself, and may include some welcome
 message. The above message is the sample, you your message may vary.
 
 Now you have entered in to a remote server. That may be a computer on
-netwrok, physically placed on the same table, or may in Canada, Europe, or
+network, physically placed on the same table, or may in Canada, Europe, or
 USA. That may be old machine or may be a super computer.
 
 If you are able to do this, then pat yourself. You have reached first
