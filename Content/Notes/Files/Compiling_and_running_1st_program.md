@@ -1,4 +1,4 @@
-[Index](../README.md) | [Previous](Compiling_and_running_1st_program.md)
+[Index](../README.md) | [Previous](Connect_to_remote_server.md)
 
 # Compiling and running 1st Computer Program
 
