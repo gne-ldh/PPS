@@ -1,21 +1,46 @@
-[Index](../README.md) | [Previous](Compiling_and_running_program_by_amending_messages.md)
+[Index](../README.md) | [Previous](Compiling_and_running_1st_program.md)
 
 # Compiling and running program by amending messages
 
-|> cp ../src/application/Bank/102Address.m ../src/application/message.m
-|> make
-|> ./main
-Principal
-Panth Rattan Shiri Gurcharan Singh Tohra Complex
-Guru Nanak Dev Engineering College
-Gill Park
-Ludhiana - 141006
-India
+	|> cp ../src/application/Bank/102Address.m ../src/application/message.m
+	|> make
+	|> ./main
+	Principal
+	Panth Rattan Shiri Gurcharan Singh Tohra Complex
+	Guru Nanak Dev Engineering College
+	Gill Park
+	Ludhiana - 141006
+	India
 
-|> cp ../src/application/Bank/103AddressOnePuts.m ../src/application/message.m
-|> make
-|> ./main
+Study `message.m` file and the output of the program. You will find that we
+have used `puts()` function for each line. It will be nice, if we can use
+only one `puts()`. Try following:
+	
+	|> cp ../src/application/Bank/103AddressOnePuts.m ../src/application/message.m
+	|> make
+	|> ./main
 
+Now, in file `message.m`, there is only one `puts()` function. But you will
+find strange character in the message, which is `\n`. `\n` is equivalent of
+`Enter` or `Return` key of the keyboard. It will insert new line.
+
+In the above `message.m` we used one `puts()` and all the message typed
+without the use of `Enter` key. This makes to read it difficult. It goes
+outside the screen with. This problem can be resolved by typing `\` before
+hitting `Enter` at the desired location. Normally, we don't wish to type
+text beyond 72th column. So type `\` and press `Enter` somewhere near column
+number from 765 to 72. Study following case:
+
+	
+	|> cp ../src/application/Bank/104AddressOnePutsContentMultiLine.m ../src/application/message.m
+	|> make
+	|> ./main
+
+
+Now, study file ../src/application/Bank/105AddressOnePutsContentMultiLineBetter.m
+
+This file is named as "Better". Why? Do you agree or not? Discuss in
+"General Forum" at [Guru@GNE](http://guru.gndec.ac.in)
 
 |>ecpe../src/application/Bank/105AddressOnePutsContentMultiLineBetter.mM../sr65AddressOnePutsContentMultiLineBetter.m ../src/aAddressOnePutsContentMultiLineBetter.m ../src/apddressOnePutsContentMultiLineBetter.m ../src/appressOnePutsContentMultiLineBetter.m ../src/applressOnePutsContentMultiLineBetter.m ../src/appliessOnePutsContentMultiLineBetter.m ../src/applicssOnePutsContentMultiLineBetter.m ../src/applicaOnePutsContentMultiLineBetter.m ../src/applicatOnePutsContentMultiLineBetter.m ../src/applicatinePutsContentMultiLineBetter.m ../src/applicatioePutsContentMultiLineBetter.m ../src/applicationPutsContentMultiLineBetter.m ../src/application/utsContentMultiLineBetter.m ../src/application/mtsContentMultiLineBetter.m ../src/application/mesContentMultiLineBetter.m ../src/application/mesContentMultiLineBetter.m ../src/application/messontentMultiLineBetter.m ../src/application/messantentMultiLineBetter.m ../src/application/messagtentMultiLineBetter.m ../src/application/messageentMultiLineBetter.m ../src/application/message.ntMultiLineBetter.m ../src/application/message.m tMultiLineBetter.m ../src/application/message.m MultiLineBetter.m ../src/application/message.m
 ^C
