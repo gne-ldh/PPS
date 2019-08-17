@@ -1,3 +1,5 @@
+[Index](../README.md) | [Previous](Compiling_and_running_1st_program.md)
+
 # Compiling and running 1st Computer Program
 
 In this session, you are going to compile and execute (run) a simple C
@@ -267,3 +269,5 @@ Good going till now. Take break, re-read above, if required. Change message
 again, compile and execute the code.
 
 Have fun!
+
+[Index](../README.md) | [Next](Compiling_and_running_program_by_amending_messages.md)
