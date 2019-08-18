@@ -245,7 +245,7 @@ code, do as follow:
 
 Pay attention to `dot` and `slash`. It will produce output as:
 
-	Welcome to budding Engineers to GNE College, Ludhiana
+	Welcome to budding Engineers! to GNE College, Ludhiana
 
 With this you are able to compile and run (execute) your 1st computer
 program.
