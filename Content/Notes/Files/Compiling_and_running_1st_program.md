@@ -58,7 +58,7 @@ session back by `tmux attach`.
 
 Even if you get interrupted, because of bad Internet, you can get your
 session back by `tmux attach` (after connecting and login to same remote
-server from any other computer, laptoop, mobile or from the same device). 
+server from any other computer, laptop, mobile or from the same device). 
 
 On computers, information is stored in files and files are stored in folder
 (also called directory). A folder may contain files and / or folders.

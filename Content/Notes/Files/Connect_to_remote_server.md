@@ -99,7 +99,7 @@ password:
 	public_html
 
 
-If will display something about itself, and may include some welcome
+It will display something about itself, and may include some welcome
 message. The above message is the sample, The message, you get may be different.
 
 Now you have entered in to a remote server. That may be a computer on
