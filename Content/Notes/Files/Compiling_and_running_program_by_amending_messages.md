@@ -59,7 +59,7 @@ s.../src/application/Bank/k/ge.m
 
 
 
-
+<
 
 
 
@@ -3709,6 +3709,8 @@ i
 
 Script done on 2019-08-15 08:54:26+05:30 [COMMAND_EXIT_CODE="0"]
 
+>
+
 
 ## Have account on GitHub
 
@@ -3717,4 +3719,7 @@ Script done on 2019-08-15 08:54:26+05:30 [COMMAND_EXIT_CODE="0"]
 
 
 
+
+
 [Index](../README.md) | [Next](.md)
+
