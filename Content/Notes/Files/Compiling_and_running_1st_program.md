@@ -186,7 +186,7 @@ and folders (Directories) may be visualised, by using `tree` command:
 
 Let us move to source code of C programming files.
 
-	|> cd Content/Programms/Week01/src/application/
+	|> cd Content/Programs/Week01/src/application/
 	|> cat message.m
 	puts("Let us C");|>
 
