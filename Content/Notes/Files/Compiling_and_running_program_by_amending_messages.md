@@ -7,10 +7,11 @@ edit this file, with your favorite editor (like `nana`, `pico`, `joe`,
 `emacs`, `vim`, `slap` or [some thing
 difference](https://www.tecmint.com/linux-command-line-editors/)).
 
-Also read [this](https://itsfoss.com/command-line-text-editors-linux/) for additional inforamtion.
+Also read [this](https://itsfoss.com/command-line-text-editors-linux/) for
+additional information.
 
 or we can copy file form the **message Bank**. We will follow the later
-appraoch. Below, we are copy file `102Address.m` from `Bank` folder: 
+approach. Below, we are copy file `102Address.m` from `Bank` folder: 
 
 	|> cp ../src/application/Bank/102Address.m ../src/application/message.m
 	|> make
@@ -55,7 +56,7 @@ Sometimes we need to do things a number of times. Like to improve our
 writing, we may be asked to write a particular line 10 times. If we do
 something wrong, teacher may direct us to write something, 10 times, as a
 part of punishment. In that case, what you will do? Will you write puts() 10
-times, or copy paste, line to be repeated, 10 time. Ok, you may affort to
+times, or copy paste, line to be repeated, 10 time. Ok, you may afford to
 copy for 10 times, what you will do, if you are asked to repeat it for 100
 times.
 
@@ -76,13 +77,13 @@ The above line make next line:
 
 to execute 10 times. Great!
 
-It instruct computer to execute `puts()` till valus to `i` less than `10` or
-is equal to `10`.  `i` will have starting value of `1`, i.e.  initial value
-if `i` is 1, and will be incremented by `1` each time `puts()` is executed.
-`int` in above line, does not stand for **initial**, but ot stands for
-**Integer**. As we need to count lines we wrote, and count number can't be
-real / fractional number, and it has to be **Integer**, so we madee `i` to
-be **Integer** with the use of keyword `int`.
+It instruct computer to execute `puts()` till value of `i` is less than `10`
+or is equal to `10`.  `i` will have starting value of `1`, i.e.  initial
+value if `i` is 1, and will be incremented by `1` each time `puts()` is
+executed.  `int` in above line, does not stand for **initial**, but ot
+stands for **Integer**.  As we need to count lines we wrote, and count
+number can't be real / fractional number, and it has to be **Integer**, so
+we made `i` to be **Integer** with the use of keyword `int`.
 
 Lat us say, teacher instruct you to make use of multiple `puts()`, like:
 
