@@ -3,7 +3,7 @@
 # Compiling and running program by amending messages
 
 Now we will change the message written in file `message.m`.  Either you may
-edit this file, with your favorite editor (like `nana`, `pico`, `joe`,
+edit this file, with your favorite editor (like `nano`, `pico`, `joe`,
 `emacs`, `vim`, `slap` or [some thing
 difference](https://www.tecmint.com/linux-command-line-editors/)).
 
