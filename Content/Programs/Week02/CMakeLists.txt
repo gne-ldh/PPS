@@ -6,9 +6,9 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 
 #Bring the headers, such as Student.h into the project
 
-include_directories(include)
+include_directories(RaiH)
  
 # file(GLOB...) allows for wildcard additions:
-file(GLOB SOURCES "src/*.c")
+file(GLOB SOURCES "RaiSource/*.c")
  
-add_executable(main ${SOURCES})
+add_executable(cir ${SOURCES})
