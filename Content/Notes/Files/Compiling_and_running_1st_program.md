@@ -1,3 +1,5 @@
+[Index](../README.md) | [Previous](Connect_to_remote_server.md)
+
 # Compiling and running 1st Computer Program
 
 In this session, you are going to compile and execute (run) a simple C
@@ -10,8 +12,8 @@ enter your command through key-board.
 
 "Solid Rectangle" is the position, where your typed character will appear.
 
-Before that "Solid Rectangle", server provide you hany information, which
-contain your UserID and ServerName.
+Before that "Solid Rectangle", called cursor, server provide you handy
+information, which contain your UserID and ServerName.
 
 It may be:
 
@@ -30,13 +32,14 @@ you login, issue following command:
 	tmux
 
 Now you work. Say after doing a lot work, you wish to logout and terminate
-connection to remote server. Then you need to de-attach your session, by:
+connection to the remote server. Then you need to detach your session, by:
 
 	^b d
 
-That mean press Ctrl, hold it and press b, release both, and then press d.
+That mean, press `Ctrl`, hold it and press `b`, release both, and then press
+`d`.
 
-Then you can type exit or Ctrl+d to logout and disconnect from remote
+Then you can type `exit` or `Ctrl`+`d` to logout and disconnect from remote
 server.
 
 Next day, you wish to continue your work. Connect and login, using:
@@ -47,20 +50,21 @@ Now you need to type:
 
 	tmux attach
 
-and you will see you will get where you lefy your session. That is the
-advantage of tmux.
+and you will see you will get where you left your session. That is the
+advantage of [tmux](https://github.com/tmux/tmux/wiki).
 
-Unless server is rebooted (which happen rarely), you can get your session by
-`tmux attach`.
+Unless server is rebooted (restarted, which happen rarely), you can get your
+session back by `tmux attach`.
 
-Even if you get interrupted, because of bad Internet, you can get tour
-session back by `tmux attach`. 
+Even if you get interrupted, because of bad Internet, you can get your
+session back by `tmux attach` (after connecting and login to same remote
+server from any other computer, laptop, mobile or from the same device). 
 
 On computers, information is stored in files and files are stored in folder
 (also called directory). A folder may contain files and / or folders.
 
 You may order (or request, if you are a civilised) to present you a list
-(shortened as `ls`) of files and directories in in the current folder.  To
+(shortened as `ls`) of files and directories in the current folder.  To
 do so, we issue following command (you need to type only `ls` and then hit
 `Enter`).
 
@@ -70,14 +74,14 @@ do so, we issue following command (you need to type only `ls` and then hit
 You are in a relative very thinly populated area.  There is just one
 directory (folder) with name public_html.  You may create folder in the
 current folder or in folder `public_html`, to manage your files, which you
-will crete yourself or download from the Internet.
+will create yourself or download from the Internet.
 
 To move from current directory to `public_html`, issue following command
 (order or request) to the computer:
 
 	hsrai@CC:~$ cd public_html
 
-Because you want to change directory, so you need to isse short-cut of
+Because you want to change directory, so you need to issue short-cut of
 "Change Directory" as `cd` (we know that you love short-cuts).  After `cd`
 you need give name of the directory, where you wish to move.
 
@@ -88,12 +92,12 @@ In `public_html`, issue following commands:
 	hsrai@CC:~/public_html$ cd Code
 	hsrai@CC:~/public_html/Code$ git clone https://github.com/gne-ldh/PPS.git
 
-If you forked above repository in your account (19123015, say) then above
-link (URL) may be `https://github.com/19123015/PPS.git
+If you forked above repository in your github account (19123015, say) then above
+link ([URL](https://en.wikipedia.org/wiki/URL)) may be `https://github.com/19123015/PPS.git`
 
 On issuing `git clone` command as above, you will see some text (as shown
 below, actual text might be different. Don't try to understand it, just read
-it and move ahead) appearing on screen:
+it and move ahead) is appearing on screen:
 
 	Cloning into 'PPS'...
 	remote: Enumerating objects: 71, done.
@@ -113,9 +117,9 @@ move to new created directory, named `PPS`, with the help of `cd` command.
 	hsrai@CC:~/public_html/Code/PPS
 
 The text you see, something like `hsrai@CC:~public_html/Code/PPS$` is called
-Prompt String (PS), and there are more than one such string, so we have PS1,
-PS2 and PS3. Let us change this PS1 and have a short and clean. To do this
-use following command:
+Prompt String (`PS`), and there are more than one such string, so we have
+`PS1`, `PS2` and `PS3`. Let us change this `PS1` and have a short and clean
+`PS1`. To do this use following command:
 
 	hsrai@CC:~/public_html/Code/PPS$ PS1="|> "
 
@@ -125,7 +129,7 @@ like:
 	|> ls
 	About  Content	LICENSE  README.md
 
-There are teo directories, and two files. The complete organisation of files
+There are two directories, and two files. The complete organisation of files
 and folders (Directories) may be visualised, by using `tree` command:
 
 
@@ -182,22 +186,27 @@ and folders (Directories) may be visualised, by using `tree` command:
 
 Let us move to source code of C programming files.
 
-	|> cd Content/Programms/Week01/src/application/
+	|> cd Content/Programs/Week01/src/application/
 	|> cat message.m
 	puts("Let us C");|>
 
 Here `message.m` is file, containing a part of C code. The code in this file
 is responsible to display message `Let us C` on screen. Let us try the
 procedure to convert this in to machine language (with the process called
-compilation). We will keep source code and files generated by compilation
-process in separate directories. So move to `build` directory, which will
-contain compilation files.
+compilation). We will keep files generated by compilation process in a
+separate directory. (not to keep with source code files) So move to `build`
+directory, which will contain compilation files.
 
 	|> cd ../../build/
 	|> cmake ..
 
-This will do a lot of hard work for you, and display what it is doing. Just
-read it casually and move ahead. It may take about 42 seconds.
+Please do pay attention to `.` i.e. dot, `/` i.e. slash and **spaces**.
+
+`cmake` will do a lot of hard work for you, and display what it is doing.
+
+`..` is called Parent Folder, `cd ..` mean go to parent folder. Just read
+the text being generated casually and move ahead. It may take some seconds,
+which may be of the order of seconds.
 
 	-- The C compiler identification is GNU 8.3.0
 	-- The CXX compiler identification is GNU 8.3.0
@@ -234,19 +243,19 @@ code, do as follow:
 
 	|> ./main
 
-It will produce output as:
+Pay attention to `dot` and `slash`. It will produce output as:
 
-	Let us C
+	Welcome to budding Engineers! to GNE College, Ludhiana
 
 With this you are able to compile and run (execute) your 1st computer
 program.
 
 You may wish to play with this, by changing the message. Use editor of your
-choice. It may be vim, joe, pico or any other as per your liking. We used in
-following example, pico. Change message, exit editor and save file, while
-exiting. 
+choice. It may be vim, nano (pico), joe, Emacs or any other as per your
+liking. We use `nano` in the following example. Change message, exit editor
+and save file, while exiting. 
 
-	pico ../src/application/message.m
+	nano ../src/application/message.m
 	
 After this, you need to compile it and run again to see the change in
 action. Do as follow:
@@ -256,7 +265,9 @@ action. Do as follow:
 
 The first command is to compile and second is to execute the code.
 
-Good going till know. Take break, re-read above, if required. Change message
+Good going till now. Take break, re-read above, if required. Change message
 again, compile and execute the code.
 
 Have fun!
+
+[Index](../README.md) | [Next](Compiling_and_running_program_by_amending_messages.md)

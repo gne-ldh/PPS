@@ -1,13 +1,15 @@
-# Laboratory Session No.: 01
+[Index](../README.md)
 
-These instructions, one need to read carefully, and apply in laboratory
+# Laboratory Session No. 01
+
+You need to read these instructions very carefully, and apply in laboratory
 session.
 
 ## Information you needed
 
-For laboratory session, we will work on a remote GNU/Linux server. You must
+For laboratory session, you will work on a remote GNU/Linux server. You must
 know the server's name, your user ID, password and the port number, which
-allow you to connect the server.
+allow you to connect the server. This needed information is tabulated below:
 
 | Item | Value |
 | ---:|:--- |
@@ -44,16 +46,16 @@ computer named `rai`, like:
 At the position of cursor (Solid Rectangle), you may type from keyboard. 
 Type following command.
 
-	hs@rai:~$ ssh hsrai@code.gdy.club
+	hs@rai:~$ mosh hsrai@code.gdy.club
 
 `hs@rai:~` will be there already, and you need to type only:
 
-	ssh <UserID>@<ServerName>
+	mosh <UserID>@<ServerName>
 
 If you UserID is 19123015, and knowing that we will be working on server
 code.gdy.club, then you need to type:
 
-	ssh 1923015@code.gdy.club
+	mosh 1923015@code.gdy.club
 
 First time, if anyone try to connect to a new remote server, then he will be
 presented with following text:
@@ -63,15 +65,15 @@ presented with following text:
 	Are you sure you want to continue connecting (yes/no)?
 
 
-Now you are supposed to read it very carefully, if you type `y` or `n`, then
-you will be surprised by getting messages like:
+Now you are supposed to read it **very** carefully, if you type `y` or `n`, then
+you will be surprised (I say, rather **_SHOCKED_**) by getting messages like:
 
 	Are you sure you want to continue connecting (yes/no)? n
 	Please type 'yes' or 'no': y
 	Please type 'yes' or 'no': yes
 
-So you need to type three letters (characters), which are y e s. Single
-character will not work.
+So you need to type three letters (characters) as instructed by the computer,
+which are y e s. Single character will not work.
 
 After this, once connection established (make sure Internet is working, and
 there is not typing error/mistake), remote server will request you for
@@ -97,15 +99,16 @@ password:
 	public_html
 
 
-If will display something about itself, and may include some welcome
-message. The above message is the sample, you your message may vary.
+It will display something about itself, and may include some welcome
+message. The above message is the sample, The message, you get may be different.
 
 Now you have entered in to a remote server. That may be a computer on
-netwrok, physically placed on the same table, or may in Canada, Europe, or
-USA. That may be old machine or may be a super computer.
+network, physically placed on the same table, or may in Canada, Europe, or
+USA. That may be an old machine or may be a super computer.
 
 If you are able to do this, then pat yourself. You have reached first
-destination. But journey is still there.
+destination. But interesting journey yet to come!
 
-Continue reading next instruction, may be after a coffee break ;-) 
+Continue reading [next instruction](Compiling_and_running_1st_program.md), may be after a tea break ;-) 
 
+[Index](../README.md) | [Next](Compiling_and_running_1st_program.md)
