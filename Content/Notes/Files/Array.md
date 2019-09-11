@@ -58,6 +58,8 @@ The above statement assigns the 5th element in the array with a value of
 called the base index and the last index of an array will be total size of
 the array minus 1.  Shown below is the pictorial representation of the array
 we discussed above −
+
+![Array](Images/2.jpg "Array")
  
 ## Accessing Array Elements
 
