@@ -1,10 +1,10 @@
 **Arithmetic Expressions and Precedence** 
 ---------------------------------------
 
-An arithmetic expression is an expression using additions +, subtractions -, multiplications *, divisions /, and exponentials **. 
+An arithmetic expression is an expression using additions +, subtractions -, multiplications *, divisions /, and modulus %. 
 An expression is a combination of one or more operands, zero or more operators, and zero or more pairs of parentheses.
 
-For example, in the expression. (5 + x). x and 5 are operands and + is an operator. The open parenthesis, which looks like **'('** is used to begin parenthetical text. The close parenthesis **')'**
+For example, in the expression. (5 + x). x and 5 are operands and + is an operator. The open parenthesis, which looks like **'('** is used to begin parenthetical text. The close parenthes is **')'**
 
 There are three kinds of expressions:
 
