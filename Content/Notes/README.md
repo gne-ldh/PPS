@@ -7,3 +7,4 @@
 # Theory Notes
 
 1. [Array](Files/Array.md)
+2. [Arithmetic Expressions and Precedence](Files/Expression.md)
