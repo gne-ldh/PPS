@@ -6,5 +6,5 @@
 
 # Theory Notes
 
-1. [Arithmetic Expressions and Precedence](Files/Expression.md)
-2. [Array]( Not Found )
+1. [Arithmetic Expressions and Precedence]( Not found )
+2. [Array](Files/Array.md)
