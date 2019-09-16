@@ -7,7 +7,7 @@ An expression is a combination of one or more operands, zero or more operators, 
 
 For example, in the expression:
 
-(5 + x)
+                               (5 + x)
 
 **x and 5** are operands 
 
