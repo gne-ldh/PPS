@@ -72,4 +72,80 @@ Output
     a*b = 36
     a/b = 2
     Remainder when a divided by b=1
+    
+    
+  **Operator Precesence and Associativity**
+
+Operator precedence determines the grouping of terms in an expression and decides how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has a higher precedence than the addition operator.
+
+        For example, 
+           x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has
+           a higher precedence than +, so it first gets multiplied with 3*2 and 
+           then adds into 7.
+
+Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.
+
+|Category|	Operator|	Associativity|
+|--------|----------|----------------|
+|Postfix |	() [] -> . ++ - -|	Left to right|
+|Unary	|+ - ! ~ ++ - - (type)* & sizeof|	Right to left|
+|Multiplicative|	* / %|	Left to right|
+|Additive|	+ -|	Left to right|
+|Shift	|<< >>|	Left to right|
+|Relational|	< <= > >=|	Left to right|
+|Equality	|== !=	|Left to right|
+|Bitwise AND|	&	|Left to right|
+|Bitwise XOR|	^	|Left to right|
+|Bitwise OR|	\|	|Left to right|
+|Logical AND|	&&	|Left to right|
+|Logical OR|	\|\| |	Left to right|
+|Conditional|	?:	|Right to left|
+|Assignment	|= += -= *= /= %=>>= <<= &= ^= \|=	|Right to left|
+|Comma	|,	|Left to right|
+
+Example
+
+  Try the following example to understand operator precedence in C −
+
+         #include <stdio.h>
+
+          int main() 
+          {
+
+           int a = 20;
+           int b = 10;
+           int c = 15;
+           int d = 5;
+           int e;
+ 
+           e = (a + b) * c / d;      // ( 30 * 15 ) / 5
+           printf("Value of (a + b) * c / d is : %d\n",  e );
+
+           e = ((a + b) * c) / d;    // (30 * 15 ) / 5
+           printf("Value of ((a + b) * c) / d is  : %d\n" ,  e );
+
+           e = (a + b) * (c / d);   // (30) * (15/5)
+           printf("Value of (a + b) * (c / d) is  : %d\n",  e );
+
+           e = a + (b * c) / d;     //  20 + (150/5)
+           printf("Value of a + (b * c) / d is  : %d\n" ,  e );
+  
+           return 0;
+          }
+
+When you compile and execute the above program, it produces the following result −
+
+        Value of (a + b) * c / d is : 90
+        Value of ((a + b) * c) / d is  : 90
+        Value of (a + b) * (c / d) is  : 90
+        Value of a + (b * c) / d is  : 50
+
+Operators Associativity is used when two operators of same precedence appear in an expression. Associativity can be either Left to Right or Right to Left.
+
+For example: ‘*’ and ‘/’ have same precedence and their associativity is Left to Right, so the expression “100 / 10 * 10” is treated as “(100 / 10) * 10”.
+
+Operators Precedence and Associativity are two characteristics of operators that determine the evaluation order of sub-expressions in absence of brackets.  
+    
+    
+    
 
