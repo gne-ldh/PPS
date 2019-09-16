@@ -125,21 +125,11 @@ Here, operators with the highest precedence appear at the top of the table, thos
 
 |Category|	Operator|	Associativity|
 |--------|----------|----------------|
-|Postfix |	( ) [ ] -> . ++ - -|	Left to right|
-|Unary	|+ - ! ~ ++ - - (type)* & sizeof|	Right to left|
-|Multiplicative|	* / %|	Left to right|
-|Additive|	+ -|	Left to right|
-|Shift	|<< >>|	Left to right|
-|Relational|	< <= > >=|	Left to right|
-|Equality	|== !=	|Left to right|
-|Bitwise AND|	&	|Left to right|
-|Bitwise XOR|	^	|Left to right|
-|Bitwise OR|	\|	|Left to right|
-|Logical AND|	&&	|Left to right|
-|Logical OR|	\|\| |	Left to right|
-|Conditional|	?:	|Right to left|
-|Assignment	|= += -= *= /= %=>>= <<= &= ^= \|=	|Right to left|
-|Comma	|,	|Left to right|
+|Postfix |	( )     [ ]    ->    .    ++    - -|	Left to right|
+|Unary	| +  -  !  ~  ++  - - (type)*   &   sizeof|	Right to left|
+|Multiplicative|	 *  /   %  |	Left to right|
+|Additive|	+   -|	Left to right|t|
+|Relational|	  <   <=   >   >=  |	Left to right|
 
 Example
 
@@ -183,7 +173,3 @@ Operators Associativity is used when two operators of same precedence appear in 
 For example: ‘*’ and ‘/’ have same precedence and their associativity is Left to Right, so the expression “100 / 10 * 10” is treated as “(100 / 10) * 10”.
 
 Operators Precedence and Associativity are two characteristics of operators that determine the evaluation order of sub-expressions in absence of brackets.  
-    
-    
-    
-
