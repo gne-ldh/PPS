@@ -113,7 +113,8 @@ Example:
     
  **Operator Precedence and Associativity**
 
-Operator precedence determines the grouping of terms in an expression and decides how an expression is evaluated. Certain operators have higher precedence than others.
+Operator precedence determines the grouping of terms in an expression and decides how an expression is evaluated. Certain operators have higher precedence than others. Operators on the same line have the same precedence.
+
 For example, the multiplication operator has a higher precedence than the addition operator.
 
         For example, 
