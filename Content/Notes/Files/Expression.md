@@ -19,11 +19,10 @@ For example, in the expression:
 
 The operators indicate what action or operation to perform. The operands indicate what items to apply the action to. 
 
-The operators for an arithmetic expression are any of the following:
-
 An operator is a symbol that tells the compiler to perform specific mathematical or logical functions. C language is rich in built-in operators and provides the following types of operators −
 
 - Arithmetic Operators
+- Assignment Operators
 
 **Arithmetic Operators**
 ------------------------------
@@ -73,8 +72,51 @@ Output
     a/b = 2
     Remainder when a divided by b=1
     
+    **Assignment Operators**
+--------------------------
+An assignment operator is used for assigning a value to a variable. The most common assignment operator is =
+
+The following table lists the assignment operators supported by the C language −
+
+Examples:
+
+|Operator|	Description|	Example|
+|--------|-------------|-----------|
+|=|	Simple assignment operator. Assigns values from right side operands to left side operand|	C = A + B will assign the value of A + B to C|
+|+=|	Add AND assignment operator. It adds the right operand to the left operand and assign the result to the left operand.|	C += A is equivalent to C = C + A|
+|-=|	Subtract AND assignment operator. It subtracts the right operand from the left operand and assigns the result to the left operand.|	C -= A is equivalent to C = C - A|
+|*=|	Multiply AND assignment operator. It multiplies the right operand with the left operand and assigns the result to the left operand.|	C *= A is equivalent to C = C * A|
+|/=|	Divide AND assignment operator. It divides the left operand with the right operand and assigns the result to the left operand.	|C /= A is equivalent to C = C / A|
+|%=|	Modulus AND assignment operator. It takes modulus using two operands and assigns the result to the left operand.|	C %= A is equivalent to C = C % A|
+|<<=|	Left shift AND assignment operator.|	C <<= 2 is same as C = C << 2|
+|>>=|	Right shift AND assignment operator.|	C >>= 2 is same as C = C >> 2|
+|&=	|Bitwise AND assignment operator.|	C &= 2 is same as C = C & 2|
+|^=|	Bitwise exclusive OR and assignment operator.|	C ^= 2 is same as C = C ^ 2|
+|\|=|	Bitwise inclusive OR and assignment operator.|	C \|= 2 is same as C = C \| 2|
+
+Example: 
+
+     // Working of assignment operators
+     #include <stdio.h>
+     int main()
+     {
+       int a = 5, c;
+       c = a;      // c is 5
+       printf("c = %d\n", c);
+       c += a;     // c is 10 
+       printf("c = %d\n", c);
+       c -= a;     // c is 5
+       printf("c = %d\n", c);
+       c *= a;     // c is 25
+       printf("c = %d\n", c);
+       c /= a;     // c is 5
+       printf("c = %d\n", c);
+       c %= a;     // c = 0
+       printf("c = %d\n", c);
+       return 0;
+      }
     
-  **Operator Precesence and Associativity**
+  **Operator Precedence and Associativity**
 
 Operator precedence determines the grouping of terms in an expression and decides how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has a higher precedence than the addition operator.
 
