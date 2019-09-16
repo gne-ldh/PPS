@@ -8,10 +8,10 @@ An expression is a combination of one or more operands, zero or more operators, 
 For example, in the expression:
 
 (5 + x)
-x and 5 are operands 
-+ is an operator. 
-( The open parenthesis, which is used to begin parenthetical text. 
-) The close parenthesis 
+**x and 5** are operands 
+**+** is an operator. 
+**(** The open parenthesis, which is used to begin parenthetical text. 
+**)** The close parenthesis 
 
 There are three kinds of expressions:
 
