@@ -72,7 +72,7 @@ Output
     a/b = 2
     Remainder when a divided by b=1
     
-    **Assignment Operators**
+**Assignment Operators**
 --------------------------
 An assignment operator is used for assigning a value to a variable. The most common assignment operator is =
 
