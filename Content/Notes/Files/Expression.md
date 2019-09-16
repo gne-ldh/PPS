@@ -11,11 +11,11 @@ For example, in the expression:
 
 x and 5 are operands 
 
-+   is an operator
++  is an operator
 
-(   The open parenthesis, which is used to begin parenthetical text
+(  The open parenthesis, which is used to begin parenthetical text
 
-)   The close parenthesis 
+)  The close parenthesis 
 
 The operators indicate what action or operation to perform. The operands indicate what items to apply the action to. 
 
