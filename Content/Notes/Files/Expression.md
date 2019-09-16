@@ -123,13 +123,13 @@ For example, the multiplication operator has a higher precedence than the additi
 
 Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.
 
-|Category|	Operator|	Associativity|
-|--------|----------|----------------|
+|Category|	Operator     |	Associativity|
+|--------|---------------|----------------|
 |Postfix |	( )     [ ]    ->    .    ++    - -|	Left to right|
 |Unary	| +  -  !  ~  ++  - - (type)*   &   sizeof|	Right to left|
 |Multiplicative|	 *  /   %  |	Left to right|
 |Additive|	+   -|	Left to right|t|
-|Relational|	  <   <=   >   >=  |	Left to right|
+|Relational|	  <     <=      >     >=  |	Left to right|
 
 Example
 
