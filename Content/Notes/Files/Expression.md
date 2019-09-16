@@ -88,11 +88,6 @@ Examples:
 |*=|	Multiply AND assignment operator. It multiplies the right operand with the left operand and assigns the result to the left operand.|	C *= A is equivalent to C = C * A|
 |/=|	Divide AND assignment operator. It divides the left operand with the right operand and assigns the result to the left operand.	|C /= A is equivalent to C = C / A|
 |%=|	Modulus AND assignment operator. It takes modulus using two operands and assigns the result to the left operand.|	C %= A is equivalent to C = C % A|
-|<<=|	Left shift AND assignment operator.|	C <<= 2 is same as C = C << 2|
-|>>=|	Right shift AND assignment operator.|	C >>= 2 is same as C = C >> 2|
-|&=	|Bitwise AND assignment operator.|	C &= 2 is same as C = C & 2|
-|^=|	Bitwise exclusive OR and assignment operator.|	C ^= 2 is same as C = C ^ 2|
-|\|=|	Bitwise inclusive OR and assignment operator.|	C \|= 2 is same as C = C \| 2|
 
 Example: 
 
