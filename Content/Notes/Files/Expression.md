@@ -1,7 +1,7 @@
 **Arithmetic Expressions and Precedence** 
 ---------------------------------------
 
-An arithmetic expression is an expression using additions +, subtractions -, multiplications *, divisions /, and exponentials **. 
+An arithmetic expression is an expression using additions +, subtractions -, multiplications *, divisions / and modulus %.
 
 An expression is a combination of one or more operands, zero or more operators, and zero or more pairs of parentheses.
 
