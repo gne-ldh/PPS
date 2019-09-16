@@ -125,8 +125,8 @@ Here, operators with the highest precedence appear at the top of the table, thos
 
 |Category|	Operator     |	Associativity|
 |--------|---------------|----------------|
-|Postfix |	( )     [ ]  ++   - -|	Left to right|
-|Unary	| +  -  !  ~  ++  - - (type)*   &   sizeof|	Right to left|
+|Postfix |	( )     [ ]  |	Left to right|
+|Unary	| +  -  ++  - -|	Right to left|
 |Multiplicative|	 *  /   %  |	Left to right|
 |Additive|	+   -|	Left to right|t|
 |Relational|	  <     <=      >     >=  |	Left to right|
