@@ -11,7 +11,7 @@ For example, in the expression:
 
 x and 5 are operands 
 
- +  is an operator
+\+  is an operator
 
 (  The open parenthesis, which is used to begin parenthetical text
 
