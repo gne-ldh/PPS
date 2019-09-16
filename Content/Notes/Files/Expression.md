@@ -28,7 +28,7 @@ An operator is a symbol that tells the compiler to perform specific mathematical
 ------------------------------
 An arithmetic operator performs mathematical operations such as addition, subtraction, multiplication, division etc on numerical values (constants and variables).
 
-The following table shows all the arithmetic operators supported by the C language. Assume variable A holds 10 and variable B holds 20 then −
+The following table shows all the arithmetic operators supported by the C language. Assume variable A holds 10 and variable B holds 20 then:
 
 Example:
 
@@ -76,7 +76,7 @@ Output
 --------------------------
 An assignment operator is used for assigning a value to a variable. The most common assignment operator is =
 
-The following table lists the assignment operators supported by the C language −
+The following table lists the assignment operators supported by the C language:
 
 Examples:
 
@@ -134,7 +134,7 @@ Here, operators with the highest precedence appear at the top of the table, thos
 
 Example
 
-  Try the following example to understand operator precedence in C −
+  Try the following example to understand operator precedence in C:
 
          #include <stdio.h>
 
@@ -162,7 +162,7 @@ Example
            return 0;
           }
 
-When you compile and execute the above program, it produces the following result −
+When you compile and execute the above program, it produces the following result:
 
         Value of (a + b) * c / d is : 90
         Value of ((a + b) * c) / d is  : 90
