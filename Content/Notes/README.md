@@ -7,4 +7,7 @@
 # Theory Notes
 
 1. [Arithmetic Expressions and Precedence](Files/Expression.md)
-2. [Array](Files/Array.md)
+1. [Functions](Files/Functions.md)
+1. [Branching and loops](Files/Branching_and_looping.md)
+1. [Array](Files/Array.md)
+1. [Structures](Files/structures_notes.md)
