@@ -1,0 +1,28 @@
+
+		How to update packages and install gcc compiler:-
+
+1. sudo apt update
+2. sudo apt install build-essential
+3. sudo apt-get install clang  or sudo apt-get install gpp gcc g++ 	(Compiler you need if needed another than GNU Linux)
+
+		
+		How to install deb files :-
+
+1.  Change directory						(best in downlaods folder)
+2.  sudo dpkg -i filename					(To install)
+3.  sudo apt-get install -f 					(for completing dependencies)
+
+
+
+		
+		How to install .sh files :-
+
+1.  Change directory						(best in downlaods folder)
+2.  chmod +x filename						(To fetch file)
+3.  sh ./filename						(To start installer)
+4.  ./uninstall.sh                        			(To uinstall)
+
+
+
+
+		
