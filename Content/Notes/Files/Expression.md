@@ -81,7 +81,7 @@ Output
 
 
 
-**Assignment Operators **
+**Assignment Operators**
 --------------------------
 
 An assignment operator is used for assigning a value to a variable. The most common assignment operator is =
