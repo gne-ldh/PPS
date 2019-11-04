@@ -94,109 +94,6 @@ int main()
 }
 ```
 ---
-### 1 Program to Check Whether a Number is Prime or Not
-```C
-include <stdio.h>
-int main()
-{
-    int n, i, flag = 0;
-    printf("Enter a positive integer: ");
-    scanf("%d", &n);
-    for(i = 2; i <= n/2; ++i)
-    {
-        // condition for nonprime number
-        if(n%i == 0)
-        {
-            flag = 1;
-            break;
-        }
-    }
-    if (n == 1) 
-    {
-      printf("1 is neither a prime nor a composite number.");
-    }
-    else 
-    {
-        if (flag == 0)
-          printf("%d is a prime number.", n);
-        else
-          printf("%d is not a prime number.", n);
-    }
-    
-    return 0;
-}
-```
----
-### 2 Program to Find LCM of two Numbers
-```C
-#include <stdio.h>
-int main()
-{
-    int n1, n2, minMultiple;
-    printf("Enter two positive integers: ");
-    scanf("%d %d", &n1, &n2);
-    // maximum number between n1 and n2 is stored in minMultiple
-    minMultiple = (n1>n2) ? n1 : n2;
-    // Always true
-    while(1)
-    {
-        if( minMultiple%n1==0 && minMultiple%n2==0 )
-        {
-            printf("The LCM of %d and %d is %d.", n1, n2,minMultiple);
-            break;
-        }
-        ++minMultiple;
-    }
-    return 0;
-}
-```
-----
-### 3 Program to find whether a given number is Even or Odd
-```C
-
-#include<stdio.h>
- int main() {
-
-  int num,temp;
-
-  printf("Enter the Number:");
-  scanf("%d",&num);
-
-  if(num%2==0)
-  printf("\nNumber is Even....");
-
-  else
-  printf("\nNumber is Odd....");
-
-  printf("\n\n");
-  return 0;
-
-```
----
-
-### 4 Program to check whether a given number is an Armstrong number or not
-```C
-#include <stdio.h>
-int main()
-{
-        int sum=0,digit;
-        int n, temp;
-        printf("enter any positive integer number");
-        scanf("%d",&n);
-        temp=n;
-        while(temp>0)
-        {
-                digit=temp%10;
-                temp/=10;
-                sum=sum+digit*digit*digit;
-        }
-        if(n==sum)
-                printf("\n %d is a armstrong number\n",n);
-        else
-                printf("\n %d is not a armstrong number\n",n);
-}
-```
----
 ### 5 Algorithm of Binary Search  
 ``` C
 #include<stdio.h>
@@ -726,7 +623,7 @@ void swap(int a, int b)
 }
 ```
 ---
-### 23 Program swap two numbers using Call By Reference method
+### 23 Program TO swap two numbers using Call By Reference method
 ```C
 
 #include <stdio.h>
@@ -760,7 +657,7 @@ void swap(int * num1, int * num2)
 }
 ```
 ---
-### 20 Program to show Employees Datails
+### 24 Program to show Employees Datails
 ```C
 #include <stdio.h>
  
@@ -787,7 +684,7 @@ int main()
 ```
 ---
 
-### 21 Program to find product of fractions using structure
+### 25 Program to find product of fractions using structure
 ```C
 #include<stdio.h>
 #include<conio.h>
@@ -822,5 +719,7 @@ typedef struct
  
    }
 ```
+---
+***
 ---
      
