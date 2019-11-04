@@ -1,4 +1,3 @@
-# My Programs
 # PROGRAMMING FOR PROBLEM SOLVING ESC -18105
 |     |     |
 |-----|-----|
@@ -9,91 +8,60 @@
 |**Year** | *1st*|
 
 ---
-### 1 Algorithm of Binary Search  
-``` C
-#include<stdio.h>
-        
-int check(int b[],int m,int o)
-{       
-        int p=-1,mid;
- int f=1,l=m;
- mid=(f+l)/2;           
-
-while(f<=l)
- {
-        mid=(f+l)/2;
-        if(b[mid]==o)
-        {
-                p=mid;
-                break;
-        }
-        else if(o>b[mid])
-        {
-                f=mid+1;
-        }
-        else if (o<b[mid])
-        {
-                l=mid-1;
-        }
-        
-}       
-                        return p;
-        
-}     
-       
-void main()
-{       
-        int n,num,index;
-        printf("enter the array size\n");
-        scanf("%d",&n);
-        int a[n];
-        printf("enter the array elements in assending order\n");
-        for(int i=1;i<=n;i++)
-        {
-                scanf("%d",&a[i]);
-        }
-        printf("now enter the number which you want to check\n whether it is present or not in entered array\n");
-        
-        scanf("%d",&num);
-        index=check(a,n,num);
-        if(index==-1)   
-        printf("element is not found\n");
-        else
-        printf("element is found at the position %d \n",index);
-
-}
-```
-----
-
-### 2 Algorithm of Bubble Short
-
-``` C
-#include<stdio.h>
+### 1 Program to Check Whether a Number is Prime or Not
+```C
+include <stdio.h>
 int main()
 {
-        int i,n,k,temp;
-        printf("\n enter the array size\n");
-        scanf("%d",&n);
-        int a[n];
-        printf("enter %d elements of array\n",n);
-        for(i=0;i<n;i++)
-                scanf("%d",&a[i]);
-        for(k=0;k<n-1;k++)
+    int n, i, flag = 0;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+    for(i = 2; i <= n/2; ++i)
+    {
+        // condition for nonprime number
+        if(n%i == 0)
         {
-                for(i=0;i<n-k-1;i++)
-                {
-                        if(a[i]>a[i+1])
-                        {
-                                temp=a[i];
-                                a[i]=a[i+1];
-                                a[i+1]=temp;
-                        }
-                }
+            flag = 1;
+            break;
         }
-        printf("\n array elements after shorting\n");
-        for(i=0;i<n;i++)
-                printf("%d\t",a[i]);
-        printf("\n");
+    }
+    if (n == 1) 
+    {
+      printf("1 is neither a prime nor a composite number.");
+    }
+    else 
+    {
+        if (flag == 0)
+          printf("%d is a prime number.", n);
+        else
+          printf("%d is not a prime number.", n);
+    }
+    
+    return 0;
+}
+```
+---
+```C
+### 2 Program to Find LCM of two Numbers
+#include <stdio.h>
+int main()
+{
+    int n1, n2, minMultiple;
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &n1, &n2);
+    // maximum number between n1 and n2 is stored in minMultiple
+    minMultiple = (n1>n2) ? n1 : n2;
+    // Always true
+    while(1)
+    {
+        if( minMultiple%n1==0 && minMultiple%n2==0 )
+        {
+            printf("The LCM of %d and %d is %d.", n1, n2,minMultiple);
+            break;
+        }
+        ++minMultiple;
+    }
+    return 0;
 }
 ```
 ----
@@ -681,5 +649,92 @@ int main()
 }
  ``` 
  ---
+ ### 1 Algorithm of Binary Search  
+``` C
+#include<stdio.h>
+        
+int check(int b[],int m,int o)
+{       
+        int p=-1,mid;
+ int f=1,l=m;
+ mid=(f+l)/2;           
+
+while(f<=l)
+ {
+        mid=(f+l)/2;
+        if(b[mid]==o)
+        {
+                p=mid;
+                break;
+        }
+        else if(o>b[mid])
+        {
+                f=mid+1;
+        }
+        else if (o<b[mid])
+        {
+                l=mid-1;
+        }
+        
+}       
+                        return p;
+        
+}     
+       
+void main()
+{       
+        int n,num,index;
+        printf("enter the array size\n");
+        scanf("%d",&n);
+        int a[n];
+        printf("enter the array elements in assending order\n");
+        for(int i=1;i<=n;i++)
+        {
+                scanf("%d",&a[i]);
+        }
+        printf("now enter the number which you want to check\n whether it is present or not in entered array\n");
+        
+        scanf("%d",&num);
+        index=check(a,n,num);
+        if(index==-1)   
+        printf("element is not found\n");
+        else
+        printf("element is found at the position %d \n",index);
+
+}
+```
+----
+
+### 2 Algorithm of Bubble Short
+
+``` C
+#include<stdio.h>
+int main()
+{
+        int i,n,k,temp;
+        printf("\n enter the array size\n");
+        scanf("%d",&n);
+        int a[n];
+        printf("enter %d elements of array\n",n);
+        for(i=0;i<n;i++)
+                scanf("%d",&a[i]);
+        for(k=0;k<n-1;k++)
+        {
+                for(i=0;i<n-k-1;i++)
+                {
+                        if(a[i]>a[i+1])
+                        {
+                                temp=a[i];
+                                a[i]=a[i+1];
+                                a[i+1]=temp;
+                        }
+                }
+        }
+        printf("\n array elements after shorting\n");
+        for(i=0;i<n;i++)
+                printf("%d\t",a[i]);
+        printf("\n");
+}
+```
  ***   
      
