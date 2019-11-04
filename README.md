@@ -41,8 +41,8 @@ int main()
 }
 ```
 ---
-```C
 ### 2 Program to Find LCM of two Numbers
+```C
 #include <stdio.h>
 int main()
 {
@@ -565,7 +565,7 @@ int main()
 
 ```
 ---
-### 23 Linear Search
+### 23 Algorithm of Linear Search
 ```C
 #include <stdio.h>
 
