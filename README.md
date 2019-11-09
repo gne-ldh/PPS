@@ -6,16 +6,22 @@
 ## **Submitted to ~ Ms. Goldendeep Kaur**
 ---
 ### 1) To display name:
+
+
+
+
 ```C
 #include<stdio.h>
 int main() {
 
-puts("**************");
-puts("Payal Kash");
-puts("**************");
+                                                                                                                                                                                                                                                                                                                    
+puts("~~~~~~~~~~~~~~~");                                                                                                    
+puts("  Payal Kash");                                                                                                       
+puts("~~~~~~~~~~~~~~~");                                                                                                    
+                                                                                                                            
+return 0;                                                                                                                   
+}         
 
-return 0;
-}
 ```
 Output:
 ![](https://i.imgur.com/jqoMMI7.png)
@@ -458,201 +464,198 @@ printf("The number is not armstrong\n");
 Output:
 ![](https://i.imgur.com/gvT3ODL.png)
 ### 19) To print Different Patterns:
-i) Pattern 1.
+### i) Pattern 1:
 ```C
-#include <stdio.h>
-int main() {
-    
-   int i,j,r;
-    
-   printf("Enter number of rows: ");
-    scanf("%d",&r);
-    
-for(i=1; i<=r; ++i)
-    {
-        for(j=1; j<=i; ++j)
-        {
-            printf("%d ",j);
-        }
-        printf("\n");
-    }
-    return 0;
-}
+#include<stdio.h>                                                                                  
+void main(){                                                                                       
+for(int i=1;i<=5;i++)                                                                              
+{                                                                                                  
+for(int j=1;j<=i;j++)                                                                              
+{                                                                                                  
+printf("%d ",j);                                                                                   
+}                                                                                                  
+printf("\n");                                                                                      
+}                                                                                                  
+}        
 
 ```
-### ii) Pattern 2. 
+Output:
+![](https://i.imgur.com/SzolNdw.png)
+### ii) Pattern 2: 
 ```C
-#include <stdio.h>
-int main() {
-    
-   int r,i,j,num= 1;
-   printf("Enter number of rows: ");
-    scanf("%d",&r);
-    for(i=1;i<=r;i++)
-    {
-        for(j=1;j<=i;++j)
-        {
-            printf("%d",num);
-            ++num;
-        }
-        printf("\n");
-    }
-    return 0;
-}
+                                                                                                   
+#include<stdio.h>                                                                                  
+int main()                                                                                         
+{                                                                                                  
+int i, space, k=0;                                                                                 
+    for(i=1; i<=7; ++i, k=0)                                                                       
+    {                                                                                              
+        for(space=1; space<=7-i; ++space)                                                          
+        {                                                                                          
+            printf("  ");                                                                          
+        }                                                                                          
+        while(k != 2*i-1)                                                                          
+        {                                                                                          
+            printf("* ");                                                                          
+            ++k;                                                                                   
+        }                                                                                          
+        printf("\n");                                                                              
+    }                                                                                              
+    return 0;                                                                                      
+}                                                                                                  
+                                                                                                                                                                                                  
+                
 ```
-### 20) Program to find largest from 1 dimensional array.
+Output:
+![](https://i.imgur.com/xAzgfBg.png)
+### 20) To find the largest number from a one dimensional array:
 ```C 
-/* Largest in 1 dimensional array */
+include<stdio.h>                                                                                  
+void main(){                                                                                       
+int a[10];                                                                                         
+int i,n;                                                                                           
+printf("Enter the number of elements to be entered in the array:");                                
+scanf("%d",&n);                                                                                    
+printf("Enter the elements of array:");                                                            
+for(i=0;i<n;i++)                                                                                   
+{                                                                                                  
+scanf("%d",&a[i]);                                                                                 
+}                                                                                                  
+                                                                                                   
+int max=a[0];                                                                                      
+for(i=0;i<n;i++){                                                                                  
+if(a[i]>max)                                                                                       
+{                                                                                                  
+max=a[i];                                                                                          
+}                                                                                                  
+}                                                                                                  
+printf("The largest number is %d\n",max);                                                          
+}                             
 
-#include <stdio.h>
-int main() {
-    
-   int i, n;
-   float arr[100];
-    
-   printf("Enter total number of elements(1 to 100): ");
-    scanf("%d", &n);
-    printf("\n");
-    
-    
-// Stores number entered by the user
-    for(i = 0; i < n; ++i)
-    {
-       printf("Enter Number %d: ", i+1);
-       scanf("%f", &arr[i]);
-    }
-    // Loop to store largest number to arr[0]
-    for(i = 1; i < n; ++i)
-    {
-       // Change < to > if you want to find the smallest element
-       if(arr[0] < arr[i])
-           arr[0] = arr[i];
-    }
-    printf("Largest element = %.2f", arr[0]);
-    return 0;
-}
 ```
-### 21) To find sumof the N natural numbers in an array.
+Output:
+![](https://i.imgur.com/TO9hTBY.png)
+### 21) To find the sum of array elements:
 ```C
-/* Sum of N no.s in array */
-     
-#include<stdio.h>
-
-int main() {
-    printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
-    int n, sum = 0, c, array[100];
-
-printf("Enter the number of integers you want to add: ");
-    scanf("%d", &n);
-
- printf("\n\nEnter %d integers \n\n", n);
-
-for(c = 0; c < n; c++)
-   {
-        scanf("%d", &array[c]);
-        sum += array[c];    // same as sum = sum + array[c]
-    }
-
-  printf("\n\nSum = %d\n\n", sum);
-    return 0;
-}
+#include<stdio.h>                                                                                  
+void main()                                                                                        
+{                                                                                                  
+int a[10],n;                                                                                       
+printf("ENter number of elements of array: ");                                                     
+scanf("%d",&n);                                                                                    
+printf("Enter the elements of array: ");                                                           
+int i,sum;                                                                                         
+for(i=0;i<n;i++)                                                                                   
+{                                                                                                  
+scanf("%d",&a[i]);                                                                                 
+sum=sum+a[i];                                                                                      
+}                                                                                                  
+printf("The sum of the elements of array is: %d\n",sum);                                           
+}                                                                                                  
+                                                                                                   
+               
 ```
-### 22) Program to add two matrices .
+Output:
+![](https://i.imgur.com/lykRLfy.png)
+### 22) Addition of two matrices:
 ```C
-/*  Addition of matrix */
-    
-#include <stdio.h>
- 
-int main() {
-   
-   int m, n, c, d, first[10][10], second[10][10], sum[10][10];
- 
-   printf("Enter the number of rows and columns of matrix\n");
-   scanf("%d%d", &m, &n);
-   
-   printf("Enter the elements of first matrix\n");
- 
-   for (c = 0; c < m; c++)
-      for (d = 0; d < n; d++)
-         scanf("%d", &first[c][d]);
- 
-   printf("Enter the elements of second matrix\n");
- 
-   for (c = 0; c < m; c++)
-      for (d = 0 ; d < n; d++)
-         scanf("%d", &second[c][d]);
-   
-   printf("Sum of entered matrices:-\n");
-   
-   for (c = 0; c < m; c++) {
-      for (d = 0 ; d < n; d++) {
-         sum[c][d] = first[c][d] + second[c][d];
-         printf("%d\t", sum[c][d]);
-      }
-      printf("\n");
-   }
- 
-   return 0;
-}
-```
-### 23) Program to multiply two matrices .
-```C
-/* Multiplation of matrices */
+#include<stdio.h>                                                                                                         
+int main(){                                                                                                               
+                                                                                                                          
+int a[3][3],b[3][3],c[3][3],i,j;                                                                                          
+printf("Enter the first matrix:\n ");                                                                                     
+for(i=0;i<3;i++)                                                                                                          
+{                                                                                                                         
+   for(j=0;j<3;j++)                                                                                                       
+   {                                                                                                                      
+    scanf("%d",&a[i][j]);                                                                                                 
+   }                                                                                                                      
+printf("\n");                                                                                                             
+}                                                                                                                         
+                                                                                                                          
+printf("Enter the second matrix: \n");                                                                                    
+for(i=0;i<3;i++)                                                                                                          
+{                                                                                                                         
+  for(j=0;j<3;j++)                                                                                                        
+{                                                                                                                         
+scanf("%d",&b[i][j]);                                                                                                     
+}                                                                                                                         
+printf("\n");                                                                                                             
+}                                                                                                                         
+                                                                                                                          
+for(i=0;i<3;i++)                                                                                                          
+{                                                                                                                         
+for(j=0;j<3;j++)                                                                                                          
+{                     
+c[i][j]=a[i][j]+b[i][j];                                                                                                  
+}                                                                                                                         
+}                                                                                                                         
+printf("The addition of two matrices is:\n");                                                                             
+for(i=0;i<3;i++)                                                                                                          
+{                                                                                                                         
+for(j=0;j<3;j++)                                                                                                          
+{                                                                                                                         
+printf("\t %d",c[i][j]);                                                                                                  
+}                                                                                                                         
+printf("\n");                                                                                                             
+}                                                                                                                         
+return 0;   
 
-#include <stdio.h>
-int main()
-     {
-      int m, n, p, q, c, d, k, sum = 0;
-      int first[10][10], second[10][10],   multiply[10][10];
- 
-  printf("Enter number of rows and columns of first matrix\n");
-  scanf("%d%d", &m, &n);
-  
-  printf("Enter elements of first matrix\n");
- 
-  for (c = 0; c < m; c++)
-    for (d = 0; d < n; d++)
-      scanf("%d", &first[c][d]);
- 
-  printf("Enter number of rows and columns of second matrix\n");
-  scanf("%d%d", &p, &q);
- 
-  if (n != p)
-    printf("The matrices can't be multiplied with each other.\n");
-  
-  else
-  {
-    printf("Enter elements of second matrix\n");
- 
-for (c=0;c<p;c++)
-      for (d = 0; d < q; d++)
-        scanf("%d", &second[c][d]);
- 
-  for (c = 0; c < m; c++) {
-      for (d = 0; d < q; d++) {
-        for (k = 0; k < p; k++) {
-          sum = sum + first[c][k]*second[k][d];
-        }
- 
-   multiply[c][d] = sum;
-        sum = 0;
-      }
-    }
- 
-   printf("Product of the matrices:\n");
- 
-   for (c = 0; c < m; c++) {
-      for (d = 0; d < q; d++)
-        printf("%d\t", multiply[c][d]);
- 
-   printf("\n");
-    }
-  }
- 
-  return 0;
-}
+      
 ```
-### 24) Program to check whether  a string is palindrome or not .
+Output:
+![](https://i.imgur.com/lw5xjQb.png)
+### 23) PMultiplication of matrices:
+```C
+#include<stdio.h>                                                                                                         
+void main()                                                                                                               
+{                                                                                                                         
+int a[3][3],b[3][3],c[3][3],i,j,k;                                                                                        
+int sum=0;                                                                                                                
+printf("Enter the first matrix:\n");                                                                                      
+for(i=0;i<3;i++)                                                                                                          
+{                                                                                                                         
+for(j=0;j<3;j++)                                                                                                          
+{                                                                                                                         
+scanf("%d",&a[i][j]);                                                                                                     
+}                                                                                                                         
+}                                                                                                                         
+printf("Enter the sceond matrix:\n");                                                                                     
+for(i=0;i<3;i++)                                                                                                          
+{                                                                                                                         
+for(j=0;j<3;j++)                                                                                                          
+{                                                                                                                         
+scanf("%d",&b[i][j]);                                                                                                     
+}                                                                                                                         
+}                                                                                                                         
+for(i=0;i<3;i++)                                                                                                          
+{                                                                                                                         
+for(j=0;j<3;j++)                                                                                                          
+{                                                                                                                         
+sum=0;                                                                                                                    
+for(k=0;k<3;k++)                                                                                                          
+{                  
+sum=sum+a[i][j]*b[i][j];                                                                                                  
+c[i][j]=sum;                                                                                                              
+}                                                                                                                         
+}                                                                                                                         
+                                                                                                                          
+}                                                                                                                         
+printf("The multiplication of two matrices is:\n");                                                                       
+for(i=0;i<3;i++)                                                                                                          
+{                                                                                                                         
+for(j=0;j<3;j++)                                                                                                          
+{                                                                                                                         
+printf("\t%d",c[i][j]);                                                                                                   
+}                                                                                                                         
+printf("\n"); 
+}
+}
+
+```
+Output:
+![](https://i.imgur.com/tPEZuNc.png)
+### 24) To  check whether a string is palindrome or not:
 ```C
 #include<stdio.h>
 #include <string.h>
@@ -662,7 +665,7 @@ int main() {
     int i,n,c=0;
  
    printf("Enter  the string : ");
-   gets(s);
+   scanf("%s",s);
    n=strlen(s);
  
 for(i=0;i<n/2;i++)
@@ -672,16 +675,17 @@ for(i=0;i<n/2;i++)
  
  	}
 if(c==i)
- 	    printf("string is palindrome");
+ 	    printf("%s is a palindrome.\n",s);
     else
-        printf("string is not palindrome");
+        printf("%s is not a palindrome.\n",s);
  
 return 0;
 }
 ```
-### 25) Program to perform basic operations like lenghth of string ,string concat, string copy ,string compare and string reverse.
+Output:
+![](https://i.imgur.com/bzOF5Qr.png)
+### 25) String operations:
 ```C
-/*Fundamental string operation, lenth, concatenation, compare and copy strings without string.h */
 
 #include <stdio.h> 
 #include <stdlib.h>
@@ -772,12 +776,15 @@ int main() {
   return 0;
 }
 ```
-### 26) Programs to swap two numbers using call by value and call by refernce.
+Output:
+![](https://i.imgur.com/CTRfOaW.png)
+### 26) Swapping two numbers:
+### i) Call by reference:
 ```C
-/* Call by reference */
+
 
 #include <stdio.h>
-void swap(int*, int*);
+void swap(int *a, int *b);
  
 int main() {
    
@@ -804,195 +811,186 @@ void swap(int *a, int *b)
    *a = temp;
 }
 ```
-### call by value:- 
+Output:
+![](https://i.imgur.com/oNNANHD.png)
+### ii) Call by value: 
 ```C
-/* Call by value */
+include<stdio.h>                                                                                                         
+                                                                                                                          
+void swap(int x,int y);                                                                                                   
+                                                                                                                          
+void main()                                                                                                               
+{                                                                                                                         
+int n1,n2;                                                                                                                
+printf("Enter n1: ");                                                                                                     
+scanf("%d",&n1);                                                                                                          
+printf("Enter n2 :");                                                                                                     
+scanf("%d",&n2);                                                                                                          
+void swap(int n1,int n2);                                                                                                 
+printf("after swapping: n1= %d and n2= %d\n",n2,n1);                                                                      
+}                                                                                                                         
+                                                                                                                          
+                                                                                                                          
+void swap(int x,int y){                                                                                                   
+                                                                                                                          
+printf("Enter 1st number x: ");                                                                                           
+scanf("%d",&x);                                                                                                           
+printf("Enter 2nd number y: ");                                                                                           
+scanf("%d",&y);                                                                                                           
+int temp;                                                                                                                 
+temp=x;                                                                                                                   
+x=y;                                                                                                                      
+y=temp;                                                                                                                   
+printf("After swapping: x = %d and y= %d",y,x);
+}
 
-#include <stdio.h>
- 
-void swap(int, int);
- 
-int main() {
-   
-   int x, y;
- 
-   printf("Enter the value of x and y\n");
-   scanf("%d%d",&x,&y);
- 
-   printf("Before Swapping\nx = %d\ny = %d\n", x, y);
- 
-   swap(x, y); 
- 
-   printf("After Swapping\nx = %d\ny = %d\n", x, y);
- 
-   return 0;
-}
- 
-void swap(int a, int b) {
-   int temp;
- 
-   temp = b;
-   b = a;
-   a = temp;
-    printf("Values of a and b is %d  %d\n",a,b);
-}
 ```
+Output:
+![](https://i.imgur.com/sR9Kwit.png)
    
-### 27) Program to calculate factorial of a number with and without recursion both.
+### 27) Factorial of a number:
+### i) With recursion:
 ```C
-/* Recursion */
-
-#include<stdio.h>
-long int multiplyNumbers(int n);
-int main() {
-    
-int n;
-    printf("Enter a positive integer: ");
-    scanf("%d", &n);
-    printf("Factorial of %d = %ld", n, multiplyNumbers(n));
-    return 0;
-}
-long int multiplyNumbers(int n)
-{
-    if (n >= 1)
-        return n*multiplyNumbers(n-1);
-    else
-        return 1;
-}
+#include<stdio.h>                                                                                                         
+                                                                                                                          
+int factorial(int m);                                                                                                     
+                                                                                                                          
+int main(){                                                                                                               
+                                                                                                                          
+int n,result;                                                                                                             
+printf("Enter a number: ");                                                                                               
+scanf("%d",&n);                                                                                                           
+result = factorial(n);                                                                                                    
+printf("The factorial of the number is: %d\n",result);                                                                    
+}                                                                                                                         
+                                                                                                                          
+int factorial(int m)                                                                                                      
+{                                                                                                                         
+if(m<0)                                                                                                                   
+printf("Factorial of a negative number is not possible.");                                                                
+                                                                                                                          
+else if(m==0 || m==1)                                                                                                     
+return 1;                                                                                                                 
+                                                                                                                          
+else                                                                                                                      
+return (m*factorial(m-1));                                                                                                
+}                                                                                                                         
 ```
-
+Output:
+![](https://i.imgur.com/YfcvJ87.png)
+### ii) Without recursion:
 ```C
-/* Without recrsion: */
 
-#include <stdio.h>
+                                                                                                                          
+#include<stdio.h>                                                                                                         
+                                                                                                                          
+void main()                                                                                                               
+{                                                                                                                         
+int a,fact=1;                                                                                                             
+printf("Enter a number: ");                                                                                               
+scanf("%d",&a);                                                                                                           
+int i=a;                                                                                                                  
+while(i>0)                                                                                                                
+{                                                                                                                         
+fact = fact*i;                                                                                                            
+i= i-1;                                                                                                                   
+                                                                                                                          
+}                                                                                                                         
+printf("The factorial of the entered number is %d \n",fact);                                                              
+}                                                                                                                         
+              
 
-int main() {
-  
-  int c, n, fact = 1;
- 
-  printf("Enter a number to calculate its factorial\n");
-  scanf("%d", &n);
- 
-  for (c = 1; c <= n; c++)
-    fact = fact * c;
- 
-  printf("Factorial of %d = %d\n", n, fact);
- 
-  return 0;
-}
 ```
-### 28) Program to print fibonacci series with and without recursion both.
+Output:
+![](https://i.imgur.com/YfcvJ87.png)
+### 28) Finonacci series:
+### i) With recursion:
 ```C
-/* Program to print fibonaci series with recursion */
+                                                                                                                          
+#include<stdio.h>                                                                                                         
+                                                                                                                          
+int fibo(int n);                                                                                                          
+int main(){                                                                                                               
+int n,i=0,c;                                                                                                              
+printf("Enter a number: ");                                                                                               
+                                                                                                                          
+scanf("%d",&n);                                                                                                           
+printf("Fibonacci series:\n");                                                                                            
+for(c=1;c<=n;c++)                                                                                                         
+     {                                                                                                                    
+     printf("%d\n",fibo(i));                                                                                              
+     i=i+1;                                                                                                               
+     }                                                                                                                    
+return 0;                                                                                                                 
+                                                                                                                          
+                                                                                                                          
+}                                                                                                                         
+int fibo(int n){                                                                                                          
+if(n==0)                                                                                                                  
+return 0;                                                                                                                 
+else if(n==1)                                                                                                             
+return 1;                                                                                                                 
+else                                                                                                                      
+return (fibo(n-1)+fibo(n-2));                                                                                             
+                                                                                                                          
+}                  
 
-#include<stdio.h>
-void series(int);		//prototype
-
-int main() {
-
-  int n;
-
-printf("\n\nEnter the number of terms you wish.......");
-  scanf("%d",&n);
-  printf("\n\n");
-
-  series(n);			// function call
-  printf("\n\n\n");
-
-  return 0;
-}
-
-void series(int n)		// definition
-
-{
-   int t1=0,t2=1,next;
-
-   for(int i=0;i<=n;i++)
-  {
-    printf("%d\t",t1);
-
-    next=t1+t2;
-    t1=t2;
-    t2=next;
-  }
-}
 ```
-#
+Output:
+![](https://i.imgur.com/6yZ5mQk.png)
+### ii) Without recursion:
 ```C
-// Fibonaci series without  recursion:-
-#include <stdio.h>
-int fibo(int);
- 
-int main() {
+                                                                                                                          
+#include<stdio.h>                                                                                                         
+int main()                                                                                                                
+{                                                                                                                         
+ int n1=0,n2=1,n3,i,number;                                                                                               
+ printf("Enter the number of elements:");                                                                                 
+ scanf("%d",&number);                                                                                                     
+ printf("%d \n%d\n",n1,n2);                                                                                               
+ for(i=2;i<number;++i)                                                                                                    
+ {                                                                                                                        
+  n3=n1+n2;                                                                                                               
+  printf("%d\n",n3);                                                                                                      
+  n1=n2;                                                                                                                  
+  n2=n3;                                                                                                                  
+ }                                                                                                                        
+  return 0;                                                                                                               
+ }                 
 
-int num;
-int result;
- 
-  printf("Enter the nth number in fibonacci series: ");
-    scanf("%d", &num);
-    if (num < 0)
-    {
-        printf("Fibonacci of negative number is not possible.\n");
-    }
-    else
-    {
-        result = fibo(num);
-        printf("The %d number in fibonacci series is %d\n", num, result);
-    }
-    return 0;
-}
-int fibo(int num)
-{
-    if (num == 0)
-    {
-        return 0;
-    }
-    else if (num == 1)
-    {
-        return 1;
-    }
-    else
-    {
-        return(fibo(num - 1) + fibo(num - 2));
-    }
-}
+
 ```
-### 29) Program to calculate average of 5 numbers using function.
+Output:
+![](https://i.imgur.com/klkirml.png)
+### 29) Average of five numbers using functions:
 ```C
- /* program to find average of 5 numbers  */
- 
-#include<stdio.h>
-int avg(int,int,int,int,int);      // prototype
- 
-int main() { int a1,a2,a3,a4,a5,res;
-   
-   printf("\nEnter the numbers respectiively....");
-   scanf("%d%d%d%d%d",&a1,&a2,&a3,&a4,&a5);
-   
-   res=avg(a1,a2,a3,a4,a5);     // function call
-   printf("Average of the numbers %d",res);
-   
-   return 0; 
- }
- 
- int avg(int a1,int a2,int a3,int a4,int a5)      // definition
- 
- { int p; 
-   p=(a1+a2+a3+a4+a5)/5;
-   return p;
- }
+                                                                                                                         
+#include<stdio.h>                                                                                                         
+int average();                                                                                                            
+void main(){                                                                                                              
+int avg;                                                                                                                  
+avg=average();                                                                                                            
+printf("The average of five numbers is: %d\n",avg);                                                                       
+}                                                                                                                         
+int average()                                                                                                             
+{                                                                                                                         
+int a,b,c,d,e,result;                                                                                                     
+printf("Enter the five numbers: ");                                                                                       
+scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);                                                                                   
+result=(a+b+c+d+e)/5;                                                                                                     
+return result;                                                                                                            
+}                                                                                                                         
+                                                                                                                          
+
  ```
-### 30) Program to implement linear serach and binary.
+ Output:
+ ![](https://i.imgur.com/W9XnidG.png)
+### 30) Linear and binary search:
  ```C
-/* Program to implement linear search and Binary search */
-
 #include <stdio.h>
 #include <stdlib.h>
 
 int main() {
-
-/* Declare variables - array_of_number,search_key,i,j,low,high*/
-
 int array[100],search_key,i,j,n,low,high,location,choice;
 
    void linear_search(int search_key,int array[100],int n);
@@ -1000,29 +998,16 @@ int array[100],search_key,i,j,n,low,high,location,choice;
    void binary_search(int search_key,int array[100],int n);
 
    clrscr();
-
-/* read the elements of array */
-
    printf("ENTER THE SIZE OF THE ARRAY:");
-
    scanf("%d",&n);
-
 printf("ENTER THE ELEMENTS OF THE ARRAY:\n");
-
    for(i=1;i<=n;i++)
    {
    scanf("%d",&array[i]);
-
 }
-
-/* Get the Search Key element for Linear Search */
-
    printf("ENTER THE SEARCH KEY:");
 
    scanf("%d",&search_key);
-
-/* Choice of Search Algorithm */
-
    printf("___________________\n");
 
    printf("1.LINEAR SEARCH\n");
@@ -1132,10 +1117,9 @@ printf("__________________________________\n");
 
 }
 ```
-### 31) Program to implement bubble sort.
+### 31) Bubble Sort:
 ```C
-   /* Bubble sort implementation  */
- 
+   
 #include <stdio.h>
  
 int main()
@@ -1154,7 +1138,7 @@ int main()
   {
     for (d = 0 ; d < n - c - 1; d++)
     {
-      if (array[d] > array[d+1]) /* For decreasing order use < */
+      if (array[d] > array[d+1]) 
       {
         swap       = array[d];
         array[d]   = array[d+1];
@@ -1171,6 +1155,8 @@ int main()
   return 0;
 }
 ```
+Output:
+![](https://i.imgur.com/g4h29XA.png)
 ### 32) Program to store information of 10 students using array of structures.
 ```C
 /* Structures for student */
@@ -1210,68 +1196,62 @@ int main()
   return 0;
 }
 ```
-### 33) Programs to compute the transpose of a matrix.
+### 33) Transpose of a matrix:
 ```C
-#include <stdio.h>
-int main()
-{
-    int a[10][10], transpose[10][10], r, c, i, j;
-    printf("Enter rows and columns of matrix: ");
-    scanf("%d %d", &r, &c);
-    // Storing elements of the matrix
-    printf("\nEnter elements of matrix:\n");
-    for(i=0; i<r; ++i)
-        for(j=0; j<c; ++j)
-        {
-            printf("Enter element a%d%d: ",i+1, j+1);
-            scanf("%d", &a[i][j]);
-        }
-        
-// Displaying the matrix a[][] */
-    printf("\nEntered Matrix: \n");
-    for(i=0; i<r; ++i)
-        for(j=0; j<c; ++j)
-        {
-            printf("%d  ", a[i][j]);
-            if (j == c-1)
-                printf("\n\n");
-        }
-    // Finding the transpose of matrix a
-    for(i=0; i<r; ++i)
-        for(j=0; j<c; ++j)
-        {
-            transpose[j][i] = a[i][j];
-        }
-    // Displaying the transpose of matrix a
-    printf("\nTranspose of Matrix:\n");
-    for(i=0; i<c; ++i)
-        for(j=0; j<r; ++j)
-        {
-            printf("%d  ",transpose[i][j]);
-            if(j==r-1)
-                printf("\n\n");
-        }
-    return 0;
+                                                                                                                         
+#include<stdio.h>                                                                                                         
+int main(){                                                                                                               
+int a[3][3];                                                                                                              
+printf("Enter a 3X3 matrix: ");                                                                                           
+for(int i=0;i<3;i++)                                                                                                      
+{                                                                                                                         
+for(int j=0;j<3;j++)                                                                                                      
+{                                                                                                                         
+scanf("%d",&a[i][j]);                                                                                                     
+}                                                                                                                         
+}                                                                                                                         
+printf("The matrix you entered is:\n");                                                                                   
+for(int i=0;i<3;i++)                                                                                                      
+{                                                                                                                         
+for(int j=0;j<3;j++)                                                                                                      
+{                                                                                                                         
+printf("%d\t",a[i][j]);                                                                                                   
+}                                                                                                                         
+printf("\n");                                                                                                             
+}                                                                                                                         
+printf("The transpose of the matrix is:\n ");                                                                             
+for(int i=0;i<3;i++)                                                                                                      
+{                                                                                                                         
+for(int j=0;j<3;j++)                                                                                                      
+{                                                                                                                         
+printf("%d\t",a[j][i]);                                                                                                   
+}                                                                                                                         
+printf("\n");                          
+}
 }
 ```
-### 34) Program to print the address of variable using pointer.
+Output:
+![](https://i.imgur.com/DLUsA0m.png)
+### 34) To display address of a variable using pointers:
 ```C
-#include <stdio.h>
-int main() {
-  int a;
-  int *pt;
-
-  a = 10;
-  pt = &a;
-
-  printf("\n[&a ]:Address of A = %p", &a);
-
-
-  return 0;
-}
-
+#include <stdio.h>                                                                                                        
+int main() {                                                                                                              
+  int a;                                                                                                                  
+  int *p;                                                                                                                 
+printf("Enter a value: ");                                                                                                
+scanf("%d",&a);                                                                                                           
+  p = &a;                                                                                                                 
+                                                                                                                          
+  printf("Address of the value is: %d\n", p);                                                                             
+                                                                                                                          
+                                                                                                                          
+  return 0;                                                                                                               
+}                                                                                                                         
+                
 ```
-### 35) Program to access array using pointer.
+Output:
+![](https://i.imgur.com/GfXzJmg.png)
+### 35) Accessing an array using pointer: 
 ```C
 #include <stdio.h>
 int main()
@@ -1285,5 +1265,7 @@ int main()
       printf("%d\n", *(data + i));
    return 0;
 }
-
+```
+Output:
+![](https://i.imgur.com/ycENt8S.png)
 
