@@ -1,9 +1,10 @@
+![](https://i.imgur.com/8bi6Eay.jpg)
 ---
-# **Programming for Problem Solving**
-## **Name** ~ Payal
-## **Class roll no. ~ 1915338**
-## **Branch ~ CSE-C2**
-## **Submitted to ~ Ms. Goldendeep Kaur**
+## **Programming for Problem Solving**
+### **Name** ~ Payal
+### **Class roll no. ~ 1915338**
+### **Branch ~ CSE-C2**
+### **Submitted to ~ Ms. Goldendeep Kaur**
 ---
 ### 1) To display name:
 
@@ -605,7 +606,7 @@ return 0;
 ```
 Output:
 ![](https://i.imgur.com/lw5xjQb.png)
-### 23) PMultiplication of matrices:
+### 23) Multiplication of matrices:
 ```C
 #include<stdio.h>                                                                                                         
 void main()                                                                                                               
@@ -986,137 +987,88 @@ return result;
  Output:
  ![](https://i.imgur.com/W9XnidG.png)
 ### 30) Linear and binary search:
+### i) Linear search:
  ```C
-#include <stdio.h>
-#include <stdlib.h>
-
-int main() {
-int array[100],search_key,i,j,n,low,high,location,choice;
-
-   void linear_search(int search_key,int array[100],int n);
-
-   void binary_search(int search_key,int array[100],int n);
-
-   clrscr();
-   printf("ENTER THE SIZE OF THE ARRAY:");
-   scanf("%d",&n);
-printf("ENTER THE ELEMENTS OF THE ARRAY:\n");
-   for(i=1;i<=n;i++)
-   {
-   scanf("%d",&array[i]);
-}
-   printf("ENTER THE SEARCH KEY:");
-
-   scanf("%d",&search_key);
-   printf("___________________\n");
-
-   printf("1.LINEAR SEARCH\n");
-
-   printf("2.BINARY SEARCH\n");
-
-   printf("___________________\n");
-
-   printf("ENTER YOUR CHOICE:");
-
-   scanf("%d",&choice);
-
-   switch(choice)
-   {
-    case 1:
-       linear_search(search_key,array,n);
-        break;
-
-   case 2:      binary_search(search_key,array,n);
-  break;
-
-default:
-
- exit(0);
-
-}
-
-  return 0;
-
-}
-
-/* LINEAR SEARCH */
-
-void linear_search(int search_key,int array[100],int n)
+ #include <stdio.h>
+  
+int main()
+{
+  int array[100], search, c, n;
+ 
+  printf("Enter number of elements in array\n");
+  scanf("%d", &n);
+ 
+  printf("Enter %d integer(s)\n", n);
+   
+  for (c = 0; c < n; c++)
+    scanf("%d", &array[c]);
+    
+  printf("Enter a number to search\n");
+  scanf("%d", &search);
+ 
+  for (c = 0; c < n; c++)
+  {
+    if (array[c] == search)                                      
     {
-
-/*Declare Variable */
-
-int i,location;
-
-for(i=1;i<=n;i++)
-        {
-
-   if(search_key == array[i])
-            {
-
-location = i;
-
-printf("______________________________________\n");
-
-printf("The location of Search Key = %d is %d\n",search_key,location);
-
-printf("______________________________________\n");
-
-}
-
-}
-
-}
-
-/* Binary Search to find Search Key */
-
-void binary_search(int search_key,int array[100],int n)
-{
-
-  int mid,i,low,high;
-
-   low = 1;
-
-   high = n;
-
-mid = (low + high)/2;
-
-i=1;
-
-while(search_key != array[mid])
-{
-
-   if(search_key <= array[mid])
-{
-
- low = 1;
-
-high = mid+1;
-
-mid = (low+high)/2;
-
+      printf("%d is present at location %d.\n", search, c+1);
+      break;
+    }
   }
-        else
-        {
-
-  low = mid+1;
-    high = n;
-
- mid = (low+high)/2;
-   }
-
+  if (c == n)
+    printf("%d isn't present in the array.\n", search);
+  
+  return 0;
 }
 
-printf("__________________________________\n");
 
-printf("location=%d\t",mid);
-
-printf("Search_Key=%d Found!\n",search_key);
-
-printf("__________________________________\n");
-
-}
 ```
+Output:
+![](https://i.imgur.com/gU0Vu22.png)
+
+### ii) Binary search:
+```C
+#include <stdio.h>
+ 
+int main()
+{
+   int c, first, last, middle, n, search, array[100];
+ 
+   printf("Enter number of elements\n");
+   scanf("%d",&n);
+ 
+   printf("Enter %d integers\n", n);
+ 
+   for (c = 0; c < n; c++)
+      scanf("%d",&array[c]);
+ 
+   printf("Enter value to find\n");
+   scanf("%d", &search);
+ 
+   first = 0;
+   last = n - 1;
+   middle = (first+last)/2;
+ 
+   while (first <= last) {
+      if (array[middle] < search)
+         first = middle + 1;    
+      else if (array[middle] == search) {
+         printf("%d found at location %d.\n", search, middle+1);
+         break;
+      }
+      else
+         last = middle - 1;
+ 
+      middle = (first + last)/2;
+   }
+   if (first > last)
+      printf("Not found! %d isn't present in the list.\n", search);
+ 
+   return 0;  
+}
+
+```
+Output:
+![](https://i.imgur.com/h4dPD7n.png)
 ### 31) Bubble Sort:
 ```C
    
@@ -1159,43 +1111,42 @@ Output:
 ![](https://i.imgur.com/g4h29XA.png)
 ### 32) Program to store information of 10 students using array of structures.
 ```C
-/* Structures for student */
-
-#include<stdio.h>
+#include <stdio.h>
 struct student
 {
-  char name[20],address[30];
-  int grade,roll,dob;
-};
-
+    char name[50];
+    int roll;
+    float marks;
+} s[10];
 int main()
 {
-  struct student s[10];
-  int i;
-  for(i=0;i<10;i++)
-  {
-    printf("\nEnter records for student[%d]\n",i+1);
-    printf("Enter name: ");
-    gets(s[i].name);
-    printf("Enter address: ");
-    gets(s[i].address);
-    printf("Enter class, roll number and date of birth(year): ");
-    scanf("%d%d%d",&s[i].grade,&s[i].roll,&s[i].dob);
-  }
-  printf("Records of the 10 students are here");
-  for(i=0;i<10;i++)
-  {
-    printf("\nStudent %d",i+1);
-    printf("\nName: %s",s[i].name);
-    printf("\nAddress: %s",s[i].address);
-    printf("\nClass: %d",s[i].grade);
-    printf("\nRoll No.: %d",s[i].roll);
-    printf("\nDOB: %d",s[i].dob);
-    printf("\n");
-  }
-  return 0;
+    int i;
+    printf("Enter information of students:\n");
+    for(i=0; i<3; ++i)
+    {
+        s[i].roll = i+1;
+        printf("\nFor roll number%d,\n",s[i].roll);
+        printf("Enter name: ");
+        scanf("%s",s[i].name);
+        printf("Enter marks: ");
+        scanf("%f",&s[i].marks);
+        printf("\n");
+    }
+    printf("Displaying Information:\n\n");
+    for(i=0; i<3; ++i)
+    {
+        printf("\nRoll number: %d\n",i+1);
+        printf("Name: ");
+        puts(s[i].name);
+        printf("Marks: %.1f",s[i].marks);
+        printf("\n");
+    }
+    return 0;
 }
+
 ```
+Output:
+![](https://i.imgur.com/Vr78u23.png)
 ### 33) Transpose of a matrix:
 ```C
                                                                                                                          
