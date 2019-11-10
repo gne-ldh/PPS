@@ -254,6 +254,8 @@ else if (disc > 0 )
    return 0;
 }
 ```
+Output:
+![](https://i.imgur.com/EN9cQQG.png)
 ### 11) To check whether a year is leap or not:
 ```C
 #include<stdio.h>
