@@ -133,7 +133,7 @@ return 0;
 #include<stdio.h>
 int main() { 
 
-  int num,temp;
+  int num;
 
   printf("Enter the Number:");
   scanf("%d",&num);
