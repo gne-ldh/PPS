@@ -2,7 +2,7 @@
 ---
 ## **<p align="center"> ESC-18104/18105 Programming for Problem Solving </p>**
 ---
-###**<p align="center">Name - _Rishab Mehndiratta_ </p>**
+### **<p align="center">Name - _Rishab Mehndiratta_ </p>**
 ### **<p align="center">CRN - _1915346_</p>**
 ### **<p align="center">Branch - _CSE C2_</p>**
 ### **<p align="center">Submitted to - _Ms. Goldendeep Kaur_</p>**
