@@ -133,7 +133,7 @@ return 0;
 #include<stdio.h>
 int main() { 
 
-  int num,temp;
+  int num;
 
   printf("Enter the Number:");
   scanf("%d",&num);
@@ -253,7 +253,7 @@ agg=s1+s2+s3+s4+s5; // Aggregate Marks
 int main()
 {
     double a, b, c, discriminant, root1, root2, realPart, imaginaryPart;
-    printf("Enter coefficients a, b and c: ");
+    printf("Enter coefficients a, b and c for a*x*x + b*x + c = 0: ");
     scanf("%lf %lf %lf",&a, &b, &c);
     discriminant = b*b-4*a*c;
     if (discriminant > 0)
@@ -384,7 +384,7 @@ int main() {
   int num,rev=0;
 
   printf("\nEnter the Number:");
-  scanf("%ld",&num);
+  scanf("%d",&num);
 
 while(num!=0)
 { 
