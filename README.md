@@ -1,3 +1,4 @@
+!images[LOGO](https://gndec.ac.in/logo.png)
 # PROGRAMMING FOR PROBLEM SOLVING ESC -18105
 |     |     |
 |-----|-----|
@@ -7,8 +8,6 @@
 |**Branch**| Information Technology|
 |**Year** | *1st*|
 
-
-!images[LOGO](https://gndec.ac.in/logo.png)
 
 ---
 ### 1 Program to find sum of two numbers
