@@ -1,4 +1,4 @@
-!images[LOGO](https://gndec.ac.in/logo.png)
+![LOGO](https://gndec.ac.in/logo.png)
 # PROGRAMMING FOR PROBLEM SOLVING ESC -18105
 |     |     |
 |-----|-----|
