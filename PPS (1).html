@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        PPS - CodiMD
+    </title>
+    <link rel="icon" type="image/png" href="https://apps-ui-453ae43b329c5e021aaa74457fb1de36.gndec.ac.in/favicon.png">
+    <link rel="apple-touch-icon" href="https://apps-ui-453ae43b329c5e021aaa74457fb1de36.gndec.ac.in/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/octicons.min.css" integrity="sha256-4eCms8tUm+iL29tUvmRhNRnz/7lNI4oTtQzqa/uM2dI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css" integrity="sha256-tAflq+ymku3Khs+I/WcAneIlafYgDiOQ9stIHH985Wo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300italic,300|Source+Serif+Pro|Source+Code+Pro:400,300,500&subset=latin,latin-ext);.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{padding:0 1em;color:#777;border-left:.25em solid #ddd}.night .markdown-body blockquote{color:#bcbcbc}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.night .markdown-body h1,.night .markdown-body h2,.night .markdown-body h3,.night .markdown-body h4,.night .markdown-body h5,.night .markdown-body h6{color:#ddd}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.night .markdown-body h1 .octicon-link,.night .markdown-body h2 .octicon-link,.night .markdown-body h3 .octicon-link,.night .markdown-body h4 .octicon-link,.night .markdown-body h5 .octicon-link,.night .markdown-body h6 .octicon-link{color:#fff}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.night .markdown-body table tr{background-color:#5f5f5f}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.night .markdown-body table tr:nth-child(2n){background-color:#4f4f4f}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.night .markdown-body code,.night .markdown-body tt{color:#eee;background-color:hsla(0,0%,90%,.36)}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\A0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body pre{border:inherit!important}.night .markdown-body pre{filter:invert(100%)}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.night .markdown-body .gist table tr:nth-child(2n){background-color:#ddd}.markdown-body code[data-gist-id]{background:none;padding:0;filter:invert(100%)}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.night .markdown-body pre.graphviz .graph>polygon{fill:#333}.night .markdown-body pre.mermaid .sectionTitle,.night .markdown-body pre.mermaid .titleText,.night .markdown-body pre.mermaid text{fill:#fff}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.night .markdown-body .abc path{fill:#eee}.night .markdown-body .abc path.note_selected{fill:##4DD0E1}.night tspan{fill:#fefefe}.night pre rect{fill:transparent}.night pre.flow-chart path,.night pre.flow-chart rect{stroke:#fff}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body img{background-color:transparent}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.night .ui-toc-dropdown .nav>li>a:focus,.night .ui-toc-dropdown .nav>li>a:hover{color:#fff;border-left-color:#fff}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.night .ui-toc-dropdown .nav>.active:focus>a,.night .ui-toc-dropdown .nav>.active:hover>a,.night .ui-toc-dropdown .nav>.active>a{color:#fff;border-left:2px solid #fff}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.night .ui-toc-dropdown .nav>li>a{color:#aaa}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,\\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3,Osaka,Meiryo,\\30E1\30A4\30EA\30AA,MS Gothic,"\FF2D\FF33   \30B4\30B7\30C3\30AF",sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,"\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF",sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,\\5FAE\8EDF\6B63\9ED1,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,\\5FAE\8EDF\6B63\9ED1UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,\\5FAE\8F6F\96C5\9ED1UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}small span{line-height:22px}small .dropdown{display:inline-block}small .dropdown a:focus,small .dropdown a:hover{text-decoration:none}.unselectable{-moz-user-select:none;-webkit-user-select:none;-o-user-select:none;user-select:none}.night .navbar{background:#333;border-bottom-color:#333;color:#eee}.night .navbar a{color:#eee}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="markdown-body container-fluid" id="doc"><h1 id="PPS"><a title="PPS" class="anchor hidden-xs" href="#PPS"><span class="octicon octicon-link"></span></a>PPS</h1><p><img alt="" src="https://"><a href="https://imgur.com/pkNQ027" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/pkNQ027.jpg"></a></p><h2 id="My-Details"><a title="My-Details" class="anchor hidden-xs" href="#My-Details"><span class="octicon octicon-link"></span></a>My Details</h2><p><strong>Name</strong> - khushboo kumari<br>
+<strong>CRN</strong> -1915325<br>
+<strong>Branch</strong> - CSE</p><h2 id="1-To-print-name-using-puts"><a title="1-To-print-name-using-puts" class="anchor hidden-xs" href="#1-To-print-name-using-puts"><span class="octicon octicon-link"></span></a>1) To print name using puts.</h2><p>/* Program to print your name */</p><p>#include&lt;stdio.h&gt;<br>
+int main() {</p><p>puts(“<strong><strong><strong><strong><strong><strong><strong>");<br>
+puts(“khushboo kashyap”);<br>
+puts("</strong></strong></strong></strong></strong></strong></strong>”);</p><p>return 0;<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/JgKiE0E" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/JgKiE0E.jpg"></a></p><p>##2) To print College address</p><p>/* College Address */</p><p>#include&lt;stdio.h&gt;<br>
+int main() {</p><p>printf("\n\t\t\tGuru Nanak Dev Engineering College,");<br>
+printf("\n\t\t\tGill Road,");<br>
+printf("\n\t\t\tLudhiana , Punjab");</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/AflCiZz" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/AflCiZz.jpg"></a></p><h2 id="3-Program-to-add-two-integers-"><a title="3-Program-to-add-two-integers-" class="anchor hidden-xs" href="#3-Program-to-add-two-integers-"><span class="octicon octicon-link"></span></a>3) Program to add two integers .</h2><p>/* To add two integers */</p><p>#include &lt;stdio.h&gt;<br>
+int main() {</p><p>int a,b;</p><p>printf("\nEnter the numbers…");</p><p>printf("\nA:");<br>
+scanf("%d",&amp;a);</p><p>printf("\nB:");<br>
+scanf("%d",&amp;b);</p><p>a=a+b;</p><p>printf("\n Sum of the number is %d ",a);</p><p>return 0;</p><p>}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/To37DLr" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/To37DLr.jpg"></a></p><h2 id="4-Program-to-find-quotient-and-remainder"><a title="4-Program-to-find-quotient-and-remainder" class="anchor hidden-xs" href="#4-Program-to-find-quotient-and-remainder"><span class="octicon octicon-link"></span></a>4) Program to find quotient and remainder.</h2><p>/* To find quotient and remainder */</p><p>#include &lt;stdio.h&gt;</p><p>int main() {</p><p>int a,b,r,q;</p><p>printf("\nEnter the Dividend:");<br>
+scanf("%d",&amp;a);</p><p>printf("\nEnter the divisor:");<br>
+scanf("%d",&amp;b);</p><p>r=a%b;<br>
+q=a/b;</p><p>printf("\nRemainder: %d",r);<br>
+printf("\nQuotient: %d",q);</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/Z9E4cCC" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/Z9E4cCC.jpg"></a></p><h2 id="5-Program-to-swap-two-variables-without-3rd-variable"><a title="5-Program-to-swap-two-variables-without-3rd-variable" class="anchor hidden-xs" href="#5-Program-to-swap-two-variables-without-3rd-variable"><span class="octicon octicon-link"></span></a>5) Program to swap two variables without 3rd variable.</h2><p>/* Swapping without 3rd variable  */</p><p>#include &lt;stdio.h&gt;<br>
+int main() {</p><p>int a,b;</p><p>printf("\nEnter the value of A:");<br>
+scanf("%d",&amp;a);</p><p>printf("\nEnter the value of B:");<br>
+scanf("%d",&amp;b);</p><p>a = a + b;<br>
+b = a - b;<br>
+a = a - b;</p><p>printf("\nA: %d",a);<br>
+printf("\nB: %d",b);</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/94n8vuM" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/94n8vuM.jpg"></a></p><h2 id="6-Program-to-check-even-odd-number"><a title="6-Program-to-check-even-odd-number" class="anchor hidden-xs" href="#6-Program-to-check-even-odd-number"><span class="octicon octicon-link"></span></a>6) Program to check even odd number.</h2><p>/* To find whether number is even or odd */</p><p>#include&lt;stdio.h&gt;<br>
+int main() {</p><p>int num,temp;</p><p>printf(“Enter the Number:”);<br>
+scanf("%d",&amp;num);</p><p>if(num%2==0)<br>
+printf("\nNumber is Even…");</p><p>else<br>
+printf("\nNumber is Odd…");</p><p>printf("\n\n");<br>
+return 0;<br>
+}<br>
+ouyput:<img alt="" src="https://"><a href="https://imgur.com/5DudHbb" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/5DudHbb.jpg"></a></p><h2 id="7-Finding-greteast-of-two-numbers"><a title="7-Finding-greteast-of-two-numbers" class="anchor hidden-xs" href="#7-Finding-greteast-of-two-numbers"><span class="octicon octicon-link"></span></a>7) Finding greteast of two numbers.</h2><p>/* Largest one in two */</p><p>#include&lt;stdio.h&gt;</p><p>int main() {<br>
+int a,b;<br>
+printf(“Enter any two number(A and B): “);<br>
+scanf(”%d%d”, &amp;a, &amp;b);</p><p>if(a&gt;b)<br>
+printf("\nA is largest…");<br>
+else<br>
+printf("\nB is largest…");</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/mPkAmCZ" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/mPkAmCZ.jpg"></a></p><h2 id="8-Find-greatest-of-three-number-"><a title="8-Find-greatest-of-three-number-" class="anchor hidden-xs" href="#8-Find-greatest-of-three-number-"><span class="octicon octicon-link"></span></a>8) Find greatest of three number .</h2><p>/* Largest of three number */</p><p>#include&lt;stdio.h&gt;<br>
+int main() {<br>
+int x, y, z, large;</p><p>printf(" Enter any three integer numbers for x, y, z :  ") ;</p><p>scanf("%d %d %d", &amp;x, &amp;y, &amp;z) ;</p><p>large = (x &gt; y ? ( x &gt; z ? x : z) : (y &gt; z ? y : z)) ;</p><p>printf("\n\n Largest  or biggest or greatest or maximum among 3 numbers using Conditional ternary Operator :  %d", large) ;</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/jVFnuKA" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/jVFnuKA.jpg"></a></p><h2 id="9-Program-to-assign-grade-to-student-according-to-percentage"><a title="9-Program-to-assign-grade-to-student-according-to-percentage" class="anchor hidden-xs" href="#9-Program-to-assign-grade-to-student-according-to-percentage"><span class="octicon octicon-link"></span></a>9) Program to assign grade to student according to percentage.</h2><p>/* To find grade of a student by marks */</p><p>#include&lt;stdio.h&gt;<br>
+int main() {</p><p>int s1,s2,s3,s4,s5,agg;<br>
+float perc;</p><p>printf(“Enter the Marks in 5 Subjects Respectively:\n”);</p><p>scanf("%d%d%d%d%d",&amp;s1,&amp;s2,&amp;s3,&amp;s4,&amp;s5);</p><p>agg=s1+s2+s3+s4+s5; // Aggregate Marks</p><p>perc=agg/500.0*100;  // Perc Marks</p><p>if(perc&gt;=90)<br>
+{<br>
+printf("\nA");</p><p>}</p><p>else if (perc&gt;=80 &amp;&amp; perc&lt;90)<br>
+{<br>
+printf("\nB");</p><p>}</p><p>else if(perc&gt;=70 &amp;&amp; perc&lt;80)<br>
+{<br>
+printf("\nC");</p><p>}</p><p>else if(perc&gt;=60 &amp;&amp; perc&lt;70)<br>
+{<br>
+printf("\nD");<br>
+}<br>
+else if(perc&gt;=50 &amp;&amp; perc&lt;60)<br>
+{<br>
+printf("\nE");<br>
+}<br>
+else<br>
+{<br>
+printf("\nScope of Improvement…");<br>
+}<br>
+return 0;<br>
+}<br>
+output:<img alt="" src="https://"><br>
+<a href="https://imgur.com/JpQDsWV" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/JpQDsWV.jpg"></a></p><h2 id="11-Program-to-check-year-is-leap-or-not"><a title="11-Program-to-check-year-is-leap-or-not" class="anchor hidden-xs" href="#11-Program-to-check-year-is-leap-or-not"><span class="octicon octicon-link"></span></a>11) Program to check year is leap or not.</h2><p>/* To find whether year is leap or not */</p><p>#include&lt;stdio.h&gt;<br>
+int main() {</p><p>int year,temp;</p><p>printf(“Enter teh year:”);<br>
+scanf("%d",&amp;year);</p><p>temp=year%4;</p><p>if(year%100<mark>0)<br>
+{<br>
+if(year%400</mark>0)<br>
+printf("\nLeap year…");<br>
+}</p><p>else<br>
+{<br>
+if(year%4==0)<br>
+printf("\nLeap year…");</p><p>else<br>
+printf("\nNot a Leap year…");<br>
+}</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/v1lNZgq" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/v1lNZgq.jpg"></a></p><h2 id="12-Program-to-print-table-of-5"><a title="12-Program-to-print-table-of-5" class="anchor hidden-xs" href="#12-Program-to-print-table-of-5"><span class="octicon octicon-link"></span></a>12) Program to print table of 5.</h2><p>/* Table of 5 */</p><p>#include&lt;stdio.h&gt;</p><p>int main() { int res;</p><p>for(int i=1;i&lt;=10;i++) {</p><p>res=5*i;</p><p>printf("\n5*%d=%d",i,res);<br>
+}</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/UerjfLP" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/UerjfLP.jpg"></a></p><h2 id="13-To-make-simple-calculator-using-switch-case"><a title="13-To-make-simple-calculator-using-switch-case" class="anchor hidden-xs" href="#13-To-make-simple-calculator-using-switch-case"><span class="octicon octicon-link"></span></a>13) To make simple calculator using switch case.</h2><p>/* C Program to Create Simple Calculator using Switch Case */</p><p>#include &lt;stdio.h&gt;</p><p>int main() {<br>
+char Operator;<br>
+float num1, num2, result = 0;</p><p>printf("\n Please Enter an Operator (+, -, *, /)  :  “);<br>
+scanf(”%c", &amp;Operator);</p><p>printf("\n Please Enter the Values for two Operands: num1 and num2  :  “);<br>
+scanf(”%f%f", &amp;num1, &amp;num2);</p><p>switch(Operator)<br>
+{<br>
+case ‘+’:<br>
+result = num1 + num2;<br>
+break;<br>
+case ‘-’:<br>
+result = num1 - num2;<br>
+break;  			<br>
+case ‘*’:<br>
+result = num1 * num2;<br>
+break;<br>
+case ‘/’:<br>
+result = num1 / num2;<br>
+break;<br>
+default:<br>
+printf("\n You have enetered an Invalid Operator ");				    			<br>
+}</p><p>printf("\n The result of %.2f %c %.2f  = %.2f", num1, Operator, num2, result);</p><p>return 0;<br>
+}<a href="https://imgur.com/mEwhMcU" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/mEwhMcU.jpg"></a><br>
+output:<img alt="" src="https://"></p><h2 id="14-To-calculate-reverse-of-a-number"><a title="14-To-calculate-reverse-of-a-number" class="anchor hidden-xs" href="#14-To-calculate-reverse-of-a-number"><span class="octicon octicon-link"></span></a>14) To calculate reverse of a number.</h2><p>/* To find reverse of a Number*/</p><p>#include&lt;stdio.h&gt;<br>
+int main() {</p><p>int num,rev=0;</p><p>printf("\nEnter the Number:");<br>
+scanf("%ld",&amp;num);</p><p>while(num!=0)<br>
+{<br>
+rev = rev * 10;<br>
+rev = rev + num%10;<br>
+num = num/10;<br>
+}</p><p>printf("\nReversed number:%d",rev);</p><p>printf("\n\n");<br>
+return 0;<br>
+}<a href="https://imgur.com/cuYQEoA" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/cuYQEoA.jpg"></a><br>
+output:<img alt="" src="https://"></p><h2 id="15-To-check-whether-number-is-palindrome-or-not"><a title="15-To-check-whether-number-is-palindrome-or-not" class="anchor hidden-xs" href="#15-To-check-whether-number-is-palindrome-or-not"><span class="octicon octicon-link"></span></a>15) To check whether number is palindrome or not.</h2><p>/* Palindrome */</p><p>#include&lt;stdio.h&gt;<br>
+int main() {</p><p>int n,rev=0,check,rem;</p><p>printf("\nEnter the number:");<br>
+scanf("%d",&amp;n);<br>
+check=n;</p><p>while( n!=0 )<br>
+{<br>
+rem = n%10;<br>
+rev = rev*10 + rem;<br>
+n /= 10;<br>
+}</p><p>if(rev==check)<br>
+printf("\nReversed number is equal to entered number…");</p><p>else<br>
+printf("\nReversed number is not equal  to entered number…");</p><p>printf("\n\n");<br>
+return 0;<br>
+}				<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/0rW01q6" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/0rW01q6.jpg"></a></p><h3 id="16-To-check-whether-a-number-is-prime-or-not"><a title="16-To-check-whether-a-number-is-prime-or-not" class="anchor hidden-xs" href="#16-To-check-whether-a-number-is-prime-or-not"><span class="octicon octicon-link"></span></a>16) To check whether a number is prime or not.</h3><p>/* Program to check prime no. */</p><p>#include &lt;stdio.h&gt;<br>
+#include &lt;stdlib.h&gt;</p><p>int main() {</p><p>int num, j, flag;</p><p>printf(“Enter a number \n”);<br>
+scanf("%d", &amp;num);</p><p>if (num &lt;= 1)<br>
+{<br>
+printf("%d is not a prime numbers \n", num);<br>
+exit(1);<br>
+}<br>
+flag = 0;<br>
+for (j = 2; j &lt;= num / 2; j++)<br>
+{<br>
+if ((num % j) == 0)<br>
+{<br>
+flag = 1;<br>
+break;<br>
+}<br>
+}<br>
+if (flag == 0)<br>
+printf("%d is a prime number \n", num);<br>
+else<br>
+printf("%d is not a prime number \n", num);</p><p>return 0;</p><p>}<br>
+output:![](https://<a href="https://imgur.com/eW0czTh" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/eW0czTh.jpg"></a>)</p><h3 id="17-Program-to-print-prime-number-to-100"><a title="17-Program-to-print-prime-number-to-100" class="anchor hidden-xs" href="#17-Program-to-print-prime-number-to-100"><span class="octicon octicon-link"></span></a>17) Program to print prime number to 100.</h3><p>/* Prime number from 1 to 100 */</p><p>#include&lt;stdio.h&gt;</p><p>int main(){</p><p>int numbr,k,remark;</p><p>printf(" The prime numbers between 1 and 100 : \n");</p><p>for(numbr=2;numbr&lt;=100;++numbr)</p><p>{</p><p>remark=0;</p><p>for(k=2;k&lt;=numbr/2;k++){</p><p>if((numbr % k) == 0){</p><p>remark++;</p><p>break;<br>
+}</p><p>}</p><p>if(remark==0)<br>
+printf("\n    %d ",numbr);</p><p>}</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/rMNQZ8v" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/rMNQZ8v.jpg"></a></p><h2 id="18-Program-to-check-whether-a-number-is-armstrong-or-not"><a title="18-Program-to-check-whether-a-number-is-armstrong-or-not" class="anchor hidden-xs" href="#18-Program-to-check-whether-a-number-is-armstrong-or-not"><span class="octicon octicon-link"></span></a>18) Program to check whether a number is armstrong or not.</h2><p>/* To check armstrong number */</p><p>#include &lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+int number, originalNumber, remainder, result = 0;</p><p>printf(“Enter a three digit integer: “);<br>
+scanf(”%d”, &amp;number);</p><p>originalNumber = number;</p><p>while (originalNumber != 0)<br>
+{<br>
+remainder = originalNumber%10;<br>
+result += remainder<em>remainder</em>remainder;<br>
+originalNumber /= 10;</p><p>}</p><p>if(result == number)<br>
+printf("%d is an Armstrong number.",number);<br>
+else<br>
+printf("%d is not an Armstrong number.",number);</p><p>return 0;<br>
+}<br>
+output:![](https:/<a href="https://imgur.com/MyFQ18c" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/MyFQ18c.jpg"></a>/)</p><h2 id="19-Print-Different-Patterns"><a title="19-Print-Different-Patterns" class="anchor hidden-xs" href="#19-Print-Different-Patterns"><span class="octicon octicon-link"></span></a>19) Print Different Patterns.</h2><h4 id="i"><a title="i" class="anchor hidden-xs" href="#i"><span class="octicon octicon-link"></span></a>i)</h4><p>/* Pattern 1*/</p><p>#include &lt;stdio.h&gt;<br>
+int main() {</p><p>int i,j,r;</p><p>printf(“Enter number of rows: “);<br>
+scanf(”%d”,&amp;r);</p><p>for(i=1; i&lt;=r; ++i)<br>
+{<br>
+for(j=1; j&lt;=i; ++j)<br>
+{<br>
+printf("%d “,j);<br>
+}<br>
+printf(”\n");<br>
+}<br>
+return 0;<br>
+}<br>
+output:![](https://<a href="https://imgur.com/T6n3SdF" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/T6n3SdF.jpg"></a>)</p><h4 id="ii"><a title="ii" class="anchor hidden-xs" href="#ii"><span class="octicon octicon-link"></span></a>ii)</h4><p>/* Pattern 2*/</p><p>#include &lt;stdio.h&gt;<br>
+int main() {</p><p>int r,i,j,num= 1;<br>
+printf(“Enter number of rows: “);<br>
+scanf(”%d”,&amp;r);<br>
+for(i=1;i&lt;=r;i++)<br>
+{<br>
+for(j=1;j&lt;=i;++j)<br>
+{<br>
+printf("%d",num);<br>
+++num;<br>
+}<br>
+printf("\n");<br>
+}<br>
+return 0;<br>
+}<br>
+output:<img alt="" src="https://"><br>
+<a href="https://imgur.com/fGw222n" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/fGw222n.jpg"></a></p><h3 id="20-Program-to-find-largest-from-1-dimensional-array"><a title="20-Program-to-find-largest-from-1-dimensional-array" class="anchor hidden-xs" href="#20-Program-to-find-largest-from-1-dimensional-array"><span class="octicon octicon-link"></span></a>20)  Program to find largest from 1 dimensional array.</h3><p>/* Largest in 1 dimensional array */</p><p>#include &lt;stdio.h&gt;<br>
+int main() {</p><p>int i, n;<br>
+float arr[100];</p><p>printf(“Enter total number of elements(1 to 100): “);<br>
+scanf(”%d”, &amp;n);<br>
+printf("\n");</p><p>// Stores number entered by the user<br>
+for(i = 0; i &lt; n; ++i)<br>
+{<br>
+printf(“Enter Number %d: “, i+1);<br>
+scanf(”%f”, &amp;arr[i]);<br>
+}<br>
+// Loop to store largest number to arr[0]<br>
+for(i = 1; i &lt; n; ++i)<br>
+{<br>
+// Change &lt; to &gt; if you want to find the smallest element<br>
+if(arr[0] &lt; arr[i])<br>
+arr[0] = arr[i];<br>
+}<br>
+printf(“Largest element = %.2f”, arr[0]);<br>
+return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/r8fQSF7" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/r8fQSF7.jpg"></a></p><h3 id="21-To-find-sumof-the-N-natural-numbers-in-an-array"><a title="21-To-find-sumof-the-N-natural-numbers-in-an-array" class="anchor hidden-xs" href="#21-To-find-sumof-the-N-natural-numbers-in-an-array"><span class="octicon octicon-link"></span></a>21) To find sumof the N natural numbers in an array.</h3><p>/* Sum of N no.s in array */</p><p>#include&lt;stdio.h&gt;</p><p>int main() {<br>
+printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");<br>
+int n, sum = 0, c, array[100];</p><p>printf(“Enter the number of integers you want to add: “);<br>
+scanf(”%d”, &amp;n);</p><p>printf("\n\nEnter %d integers \n\n", n);</p><p>for(c = 0; c &lt; n; c++)<br>
+{<br>
+scanf("%d", &amp;array[c]);<br>
+sum += array[c];    // same as sum = sum + array[c]<br>
+}</p><p>printf("\n\nSum = %d\n\n", sum);<br>
+return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/rv4Bhxv" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/rv4Bhxv.jpg"></a></p><h3 id="22-Program-to-add-two-matrices-"><a title="22-Program-to-add-two-matrices-" class="anchor hidden-xs" href="#22-Program-to-add-two-matrices-"><span class="octicon octicon-link"></span></a>22) Program to add two matrices .</h3><p>/*  Addition of matrix */</p><p>#include &lt;stdio.h&gt;</p><p>int main() {</p><p>int m, n, c, d, first[10][10], second[10][10], sum[10][10];</p><p>printf(“Enter the number of rows and columns of matrix\n”);<br>
+scanf("%d%d", &amp;m, &amp;n);</p><p>printf(“Enter the elements of first matrix\n”);</p><p>for (c = 0; c &lt; m; c++)<br>
+for (d = 0; d &lt; n; d++)<br>
+scanf("%d", &amp;first[c][d]);</p><p>printf(“Enter the elements of second matrix\n”);</p><p>for (c = 0; c &lt; m; c++)<br>
+for (d = 0 ; d &lt; n; d++)<br>
+scanf("%d", &amp;second[c][d]);</p><p>printf(“Sum of entered matrices:-\n”);</p><p>for (c = 0; c &lt; m; c++) {<br>
+for (d = 0 ; d &lt; n; d++) {<br>
+sum[c][d] = first[c][d] + second[c][d];<br>
+printf("%d\t", sum[c][d]);<br>
+}<br>
+printf("\n");<br>
+}</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/j2EfGcO" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/j2EfGcO.jpg"></a></p><h2 id="23-Program-to-multiply-two-matrices-"><a title="23-Program-to-multiply-two-matrices-" class="anchor hidden-xs" href="#23-Program-to-multiply-two-matrices-"><span class="octicon octicon-link"></span></a>23) Program to multiply two matrices .</h2><p>#include &lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+int m, n, p, q, c, d, k, sum = 0;<br>
+int first[10][10], second[10][10],   multiply[10][10];</p><p>printf(“Enter number of rows and columns of first matrix\n”);<br>
+scanf("%d%d", &amp;m, &amp;n);</p><p>printf(“Enter elements of first matrix\n”);</p><p>for (c = 0; c &lt; m; c++)<br>
+for (d = 0; d &lt; n; d++)<br>
+scanf("%d", &amp;first[c][d]);</p><p>printf(“Enter number of rows and columns of second matrix\n”);<br>
+scanf("%d%d", &amp;p, &amp;q);</p><p>if (n != p)<br>
+printf(“The matrices can’t be multiplied with each other.\n”);</p><p>else<br>
+{<br>
+printf(“Enter elements of second matrix\n”);</p><p>for (c=0;c&lt;p;c++)<br>
+for (d = 0; d &lt; q; d++)<br>
+scanf("%d", &amp;second[c][d]);</p><p>for (c = 0; c &lt; m; c++) {<br>
+for (d = 0; d &lt; q; d++) {<br>
+for (k = 0; k &lt; p; k++) {<br>
+sum = sum + first[c][k]*second[k][d];<br>
+}</p><p>multiply[c][d] = sum;<br>
+sum = 0;<br>
+}<br>
+}</p><p>printf(“Product of the matrices:\n”);</p><p>for (c = 0; c &lt; m; c++) {<br>
+for (d = 0; d &lt; q; d++)<br>
+printf("%d\t", multiply[c][d]);</p><p>printf("\n");<br>
+}<br>
+}</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/4sEk2dE" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/4sEk2dE.jpg"></a></p><h2 id="24-Program-to-check-whether-a-string-is-palindrome-or-not-"><a title="24-Program-to-check-whether-a-string-is-palindrome-or-not-" class="anchor hidden-xs" href="#24-Program-to-check-whether-a-string-is-palindrome-or-not-"><span class="octicon octicon-link"></span></a>24) Program to check whether  a string is palindrome or not .</h2><p>#include&lt;stdio.h&gt;<br>
+#include &lt;string.h&gt;</p><p>int main() {<br>
+char s[1000];<br>
+int i,n,c=0;</p><p>printf("Enter  the string : ");<br>
+gets(s);<br>
+n=strlen(s);</p><p>for(i=0;i&lt;n/2;i++)<br>
+{<br>
+if(s[i]==s[n-i-1])<br>
+c++;</p><pre><code>}
+</code></pre><p>if(c==i)<br>
+printf(“string is palindrome”);<br>
+else<br>
+printf(“string is not palindrome”);</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/QNQ35Ju" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/QNQ35Ju.jpg"></a></p><h2 id="25-Programs-to-swap-two-numbers-using-call-by-value-and-call-by-refernce"><a title="25-Programs-to-swap-two-numbers-using-call-by-value-and-call-by-refernce" class="anchor hidden-xs" href="#25-Programs-to-swap-two-numbers-using-call-by-value-and-call-by-refernce"><span class="octicon octicon-link"></span></a>25 Programs to swap two numbers using call by value and call by refernce.</h2><h4 id="call-by-refernce-"><a title="call-by-refernce-" class="anchor hidden-xs" href="#call-by-refernce-"><span class="octicon octicon-link"></span></a>call by refernce:-</h4><p>#include &lt;stdio.h&gt;<br>
+void swap(int*, int*);</p><p>int main() {</p><p>int x, y;</p><p>printf(“Enter the value of x and y\n”);<br>
+scanf("%d%d",&amp;x,&amp;y);</p><p>printf(“Before Swapping\nx = %d\ny = %d\n”, x, y);</p><p>swap(&amp;x, &amp;y);</p><p>printf(“After Swapping\nx = %d\ny = %d\n”, x, y);</p><p>return 0;<br>
+}</p><p>void swap(int *a, int *b)<br>
+{<br>
+int temp;</p><p>temp = *b;<br>
+*b = *a;<br>
+*a = temp;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/jjt2wzn" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/jjt2wzn.jpg"></a></p><h4 id="call-by-value-"><a title="call-by-value-" class="anchor hidden-xs" href="#call-by-value-"><span class="octicon octicon-link"></span></a>call by value:-</h4><p>#include &lt;stdio.h&gt;</p><p>void swap(int, int);</p><p>int main() {</p><p>int x, y;</p><p>printf(“Enter the value of x and y\n”);<br>
+scanf("%d%d",&amp;x,&amp;y);</p><p>printf(“Before Swapping\nx = %d\ny = %d\n”, x, y);</p><p>swap(x, y);</p><p>printf(“After Swapping\nx = %d\ny = %d\n”, x, y);</p><p>return 0;<br>
+}</p><p>void swap(int a, int b) {<br>
+int temp;</p><p>temp = b;<br>
+b = a;<br>
+a = temp;<br>
+printf(“Values of a and b is %d  %d\n”,a,b);<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/0o0HzSW" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/0o0HzSW.jpg"></a></p><h2 id="27-Program-to-calculate-factorial-of-a-number-with-and-without-recursion-both"><a title="27-Program-to-calculate-factorial-of-a-number-with-and-without-recursion-both" class="anchor hidden-xs" href="#27-Program-to-calculate-factorial-of-a-number-with-and-without-recursion-both"><span class="octicon octicon-link"></span></a>27) Program to calculate factorial of a number with and without recursion both.</h2><h4 id="Recursion-"><a title="Recursion-" class="anchor hidden-xs" href="#Recursion-"><span class="octicon octicon-link"></span></a>Recursion:-</h4><p>#include&lt;stdio.h&gt;<br>
+long int multiplyNumbers(int n);<br>
+int main() {</p><p>int n;<br>
+printf(“Enter a positive integer: “);<br>
+scanf(”%d”, &amp;n);<br>
+printf(“Factorial of %d = %ld”, n, multiplyNumbers(n));<br>
+return 0;<br>
+}<br>
+long int multiplyNumbers(int n)<br>
+{<br>
+if (n &gt;= 1)<br>
+return n*multiplyNumbers(n-1);<br>
+else<br>
+return 1;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/HLYmaxQ" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/HLYmaxQ.jpg"></a></p><h4 id="without-recrsion-"><a title="without-recrsion-" class="anchor hidden-xs" href="#without-recrsion-"><span class="octicon octicon-link"></span></a>without recrsion:-</h4><p>#include &lt;stdio.h&gt;</p><p>int main() {</p><p>int c, n, fact = 1;</p><p>printf(“Enter a number to calculate its factorial\n”);<br>
+scanf("%d", &amp;n);</p><p>for (c = 1; c &lt;= n; c++)<br>
+fact = fact * c;</p><p>printf(“Factorial of %d = %d\n”, n, fact);</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/ywFT8hb" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/ywFT8hb.jpg"></a></p><h2 id="28-Program-to-print-fibonacci-series-with-and-without-recursion-both"><a title="28-Program-to-print-fibonacci-series-with-and-without-recursion-both" class="anchor hidden-xs" href="#28-Program-to-print-fibonacci-series-with-and-without-recursion-both"><span class="octicon octicon-link"></span></a>28) Program to print fibonacci series with and without recursion both.</h2><h4 id="Without-recursion-"><a title="Without-recursion-" class="anchor hidden-xs" href="#Without-recursion-"><span class="octicon octicon-link"></span></a>Without recursion:-</h4><p>/* Program to print fibonaci series */</p><p>#include&lt;stdio.h&gt;<br>
+void series(int);		//prototype</p><p>int main() {</p><p>int n;</p><p>printf("\n\nEnter the number of terms you wish…");<br>
+scanf("%d",&amp;n);<br>
+printf("\n\n");</p><p>series(n);			// function call<br>
+printf("\n\n\n");</p><p>return 0;<br>
+}</p><p>void series(int n)		// definition</p><p>{<br>
+int t1=0,t2=1,next;</p><p>for(int i=0;i&lt;=n;i++)<br>
+{<br>
+printf("%d\t",t1);</p><pre><code>next=t1+t2;
+t1=t2;
+t2=next;
+</code></pre><p>}<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/jM2hXBx" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/jM2hXBx.jpg"></a></p><h4 id="with-recursion-"><a title="with-recursion-" class="anchor hidden-xs" href="#with-recursion-"><span class="octicon octicon-link"></span></a>with recursion:-</h4><p>#include &lt;stdio.h&gt;<br>
+int fibo(int);</p><p>int main() {</p><p>int num;<br>
+int result;</p><p>printf(“Enter the nth number in fibonacci series: “);<br>
+scanf(”%d”, &amp;num);<br>
+if (num &lt; 0)<br>
+{<br>
+printf(“Fibonacci of negative number is not possible.\n”);<br>
+}<br>
+else<br>
+{<br>
+result = fibo(num);<br>
+printf(“The %d number in fibonacci series is %d\n”, num, result);<br>
+}<br>
+return 0;<br>
+}<br>
+int fibo(int num)<br>
+{<br>
+if (num == 0)<br>
+{<br>
+return 0;<br>
+}<br>
+else if (num == 1)<br>
+{<br>
+return 1;<br>
+}<br>
+else<br>
+{<br>
+return(fibo(num - 1) + fibo(num - 2));<br>
+}<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/FMWREjj" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/FMWREjj.jpg"></a></p><h2 id="29-Program-to-calculate-average-of-5-numbers-using-function"><a title="29-Program-to-calculate-average-of-5-numbers-using-function" class="anchor hidden-xs" href="#29-Program-to-calculate-average-of-5-numbers-using-function"><span class="octicon octicon-link"></span></a>29) Program to calculate average of 5 numbers using function.</h2><p>/* program to find average of 5 numbers  */</p><p>#include&lt;stdio.h&gt;<br>
+int avg(int,int,int,int,int);      // prototype</p><p>int main() { int a1,a2,a3,a4,a5,res;</p><p>printf("\nEnter the numbers respectiively…");<br>
+scanf("%d%d%d%d%d",&amp;a1,&amp;a2,&amp;a3,&amp;a4,&amp;a5);</p><p>res=avg(a1,a2,a3,a4,a5);     // function call<br>
+printf(“Average of the numbers %d”,res);</p><p>return 0;<br>
+}</p><p>int avg(int a1,int a2,int a3,int a4,int a5)      // definition</p><p>{ int p;<br>
+p=(a1+a2+a3+a4+a5)/5;<br>
+return p;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/PGR01B3" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/PGR01B3.jpg"></a></p><h2 id="30-Program-to-implement-linear-serach-and-binary"><a title="30-Program-to-implement-linear-serach-and-binary" class="anchor hidden-xs" href="#30-Program-to-implement-linear-serach-and-binary"><span class="octicon octicon-link"></span></a>30) Program to implement linear serach and binary.</h2><p>/* Program to implement linear search and Binary search */</p><p>#include &lt;stdio.h&gt;<br>
+#include &lt;stdlib.h&gt;</p><p>int main() {</p><p>/* Declare variables - array_of_number,search_key,i,j,low,high*/</p><p>int array[100],search_key,i,j,n,low,high,location,choice;</p><p>void linear_search(int search_key,int array[100],int n);</p><p>void binary_search(int search_key,int array[100],int n);</p><p>clrscr();</p><p>/* read the elements of array */</p><p>printf(“ENTER THE SIZE OF THE ARRAY:”);</p><p>scanf("%d",&amp;n);</p><p>printf(“ENTER THE ELEMENTS OF THE ARRAY:\n”);</p><p>for(i=1;i&lt;=n;i++)<br>
+{<br>
+scanf("%d",&amp;array[i]);</p><p>}</p><p>/* Get the Search Key element for Linear Search */</p><p>printf(“ENTER THE SEARCH KEY:”);</p><p>scanf("%d",&amp;search_key);</p><p>/* Choice of Search Algorithm */</p><p>printf("___________________\n");</p><p>printf(“1.LINEAR SEARCH\n”);</p><p>printf(“2.BINARY SEARCH\n”);</p><p>printf("___________________\n");</p><p>printf(“ENTER YOUR CHOICE:”);</p><p>scanf("%d",&amp;choice);</p><p>switch(choice)<br>
+{<br>
+case 1:<br>
+linear_search(search_key,array,n);<br>
+break;</p><p>case 2:      binary_search(search_key,array,n);<br>
+break;</p><p>default:</p><p>exit(0);</p><p>}</p><p>return 0;</p><p>}</p><p>/* LINEAR SEARCH */</p><p>void linear_search(int search_key,int array[100],int n)<br>
+{</p><p>/*Declare Variable */</p><p>int i,location;</p><p>for(i=1;i&lt;=n;i++)<br>
+{</p><p>if(search_key == array[i])<br>
+{</p><p>location = i;</p><p>printf("______________________________________\n");</p><p>printf(“The location of Search Key = %d is %d\n”,search_key,location);</p><p>printf("______________________________________\n");</p><p>}</p><p>}</p><p>}</p><p>/* Binary Search to find Search Key */</p><p>void binary_search(int search_key,int array[100],int n)<br>
+{</p><p>int mid,i,low,high;</p><p>low = 1;</p><p>high = n;</p><p>mid = (low + high)/2;</p><p>i=1;</p><p>while(search_key != array[mid])<br>
+{</p><p>if(search_key &lt;= array[mid])<br>
+{</p><p>low = 1;</p><p>high = mid+1;</p><p>mid = (low+high)/2;</p><p>}<br>
+else<br>
+{</p><p>low = mid+1;<br>
+high = n;</p><p>mid = (low+high)/2;<br>
+}</p><p>}</p><p>printf("__________________________________\n");</p><p>printf(“location=%d\t”,mid);</p><p>printf(“Search_Key=%d Found!\n”,search_key);</p><p>printf("__________________________________\n");</p><p>}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/EmOX9fJ" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/EmOX9fJ.jpg"></a></p><h2 id="31-Program-to-implement-bubble-sort"><a title="31-Program-to-implement-bubble-sort" class="anchor hidden-xs" href="#31-Program-to-implement-bubble-sort"><span class="octicon octicon-link"></span></a>31) Program to implement bubble sort.</h2><p>/* Bubble sort implementation  */</p><p>#include &lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int array[100], n, c, d, swap;</p><p>printf(“Enter number of elements\n”);<br>
+scanf("%d", &amp;n);</p><p>printf(“Enter %d integers\n”, n);</p><p>for (c = 0; c &lt; n; c++)<br>
+scanf("%d", &amp;array[c]);</p><p>for (c = 0 ; c &lt; n - 1; c++)<br>
+{<br>
+for (d = 0 ; d &lt; n - c - 1; d++)<br>
+{<br>
+if (array[d] &gt; array[d+1]) /* For decreasing order use &lt; */<br>
+{<br>
+swap       = array[d];<br>
+array[d]   = array[d+1];<br>
+array[d+1] = swap;<br>
+}<br>
+}<br>
+}</p><p>printf(“Sorted list in ascending order:\n”);</p><p>for (c = 0; c &lt; n; c++)<br>
+printf("%d\n", array[c]);</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/XoKHjQI" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/XoKHjQI.jpg"></a></p><h2 id="32-Program-to-store-information-of-10-students-using-array-of-structures"><a title="32-Program-to-store-information-of-10-students-using-array-of-structures" class="anchor hidden-xs" href="#32-Program-to-store-information-of-10-students-using-array-of-structures"><span class="octicon octicon-link"></span></a>32) Program to store information of 10 students using array of structures.</h2><p>#include&lt;stdio.h&gt;<br>
+struct student<br>
+{<br>
+char name[20],address[30];<br>
+int grade,roll,dob;<br>
+};</p><p>int main()<br>
+{<br>
+struct student s[10];<br>
+int i;<br>
+for(i=0;i&lt;10;i++)<br>
+{<br>
+printf("\nEnter records for student[%d]\n",i+1);<br>
+printf(“Enter name: “);<br>
+gets(s[i].name);<br>
+printf(“Enter address: “);<br>
+gets(s[i].address);<br>
+printf(“Enter class, roll number and date of birth(year): “);<br>
+scanf(”%d%d%d”,&amp;s[i].grade,&amp;s[i].roll,&amp;s[i].dob);<br>
+}<br>
+printf(“Records of the 10 students are here”);<br>
+for(i=0;i&lt;10;i++)<br>
+{<br>
+printf(”\nStudent %d”,i+1);<br>
+printf(”\nName: %s”,s[i].name);<br>
+printf("\nAddress: %s",s[i].address);<br>
+printf("\nClass: %d",s[i].grade);<br>
+printf("\nRoll No.: %d",s[i].roll);<br>
+printf("\nDOB: %d",s[i].dob);<br>
+printf("\n");<br>
+}<br>
+return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/b3EltHC" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/b3EltHC.jpg"></a></p><h2 id="33-Programs-to-compute-the-transpose-of-a-matrix"><a title="33-Programs-to-compute-the-transpose-of-a-matrix" class="anchor hidden-xs" href="#33-Programs-to-compute-the-transpose-of-a-matrix"><span class="octicon octicon-link"></span></a>33) Programs to compute the transpose of a matrix.</h2><p>#include &lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+int a[10][10], transpose[10][10], r, c, i, j;<br>
+printf(“Enter rows and columns of matrix: “);<br>
+scanf(”%d %d”, &amp;r, &amp;c);<br>
+// Storing elements of the matrix<br>
+printf("\nEnter elements of matrix:\n");<br>
+for(i=0; i&lt;r; ++i)<br>
+for(j=0; j&lt;c; ++j)<br>
+{<br>
+printf(“Enter element a%d%d: “,i+1, j+1);<br>
+scanf(”%d”, &amp;a[i][j]);<br>
+}</p><p>// Displaying the matrix a[][] */<br>
+printf("\nEntered Matrix: \n");<br>
+for(i=0; i&lt;r; ++i)<br>
+for(j=0; j&lt;c; ++j)<br>
+{<br>
+printf("%d  “, a[i][j]);<br>
+if (j == c-1)<br>
+printf(”\n\n");<br>
+}<br>
+// Finding the transpose of matrix a<br>
+for(i=0; i&lt;r; ++i)<br>
+for(j=0; j&lt;c; ++j)<br>
+{<br>
+transpose[j][i] = a[i][j];<br>
+}<br>
+// Displaying the transpose of matrix a<br>
+printf("\nTranspose of Matrix:\n");<br>
+for(i=0; i&lt;c; ++i)<br>
+for(j=0; j&lt;r; ++j)<br>
+{<br>
+printf("%d  “,transpose[i][j]);<br>
+if(j==r-1)<br>
+printf(”\n\n");<br>
+}<br>
+return 0;<br>
+}<br>
+output:<img alt="" src="https://"><a href="https://imgur.com/BUdFGNP" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/BUdFGNP.jpg"></a></p><h2 id="34-Program-to-print-the-address-of-variable-using-pointer"><a title="34-Program-to-print-the-address-of-variable-using-pointer" class="anchor hidden-xs" href="#34-Program-to-print-the-address-of-variable-using-pointer"><span class="octicon octicon-link"></span></a>34) Program to print the address of variable using pointer.</h2><p>#include &lt;stdio.h&gt;<br>
+int main() {<br>
+int a;<br>
+int *pt;</p><p>a = 10;<br>
+pt = &amp;a;</p><p>printf("\n[&amp;a ]:Address of A = %p", &amp;a);</p><p>return 0;<br>
+}<br>
+output:<img alt="" src="https://"><br>
+<a href="https://imgur.com/bKs2OFa" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/bKs2OFa.jpg"></a></p><h2 id="35-Program-to-access-array-using-pointer"><a title="35-Program-to-access-array-using-pointer" class="anchor hidden-xs" href="#35-Program-to-access-array-using-pointer"><span class="octicon octicon-link"></span></a>35) Program to access array using pointer.</h2><p>#include &lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+int data[5],i;<br>
+printf(“Enter elements: “);<br>
+for(i = 0; i &lt; 5; ++i)<br>
+scanf(”%d”, data + i);<br>
+printf(“You entered: \n”);<br>
+for(i = 0; i &lt; 5; ++i<br>
+printf("%d\n", *(data + i));<br>
+return 0;<br>
+}<a href="https://imgur.com/mCPwMOX" target="_blank"><img title="source: imgur.com" src="https://i.imgur.com/mCPwMOX.jpg"></a><br>
+output:<img alt="" src="https://"></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a title="PPS" href="#PPS">PPS</a><ul class="nav">
+<li><a title="My Details" href="#My-Details">My Details</a></li>
+<li><a title="1) To print name using puts." href="#1-To-print-name-using-puts">1) To print name using puts.</a></li>
+<li><a title="3) Program to add two integers ." href="#3-Program-to-add-two-integers-">3) Program to add two integers .</a></li>
+<li><a title="4) Program to find quotient and remainder." href="#4-Program-to-find-quotient-and-remainder">4) Program to find quotient and remainder.</a></li>
+<li><a title="5) Program to swap two variables without 3rd variable." href="#5-Program-to-swap-two-variables-without-3rd-variable">5) Program to swap two variables without 3rd variable.</a></li>
+<li><a title="6) Program to check even odd number." href="#6-Program-to-check-even-odd-number">6) Program to check even odd number.</a></li>
+<li><a title="7) Finding greteast of two numbers." href="#7-Finding-greteast-of-two-numbers">7) Finding greteast of two numbers.</a></li>
+<li><a title="8) Find greatest of three number ." href="#8-Find-greatest-of-three-number-">8) Find greatest of three number .</a></li>
+<li><a title="9) Program to assign grade to student according to percentage." href="#9-Program-to-assign-grade-to-student-according-to-percentage">9) Program to assign grade to student according to percentage.</a></li>
+<li><a title="11) Program to check year is leap or not." href="#11-Program-to-check-year-is-leap-or-not">11) Program to check year is leap or not.</a></li>
+<li><a title="12) Program to print table of 5." href="#12-Program-to-print-table-of-5">12) Program to print table of 5.</a></li>
+<li><a title="13) To make simple calculator using switch case." href="#13-To-make-simple-calculator-using-switch-case">13) To make simple calculator using switch case.</a></li>
+<li><a title="14) To calculate reverse of a number." href="#14-To-calculate-reverse-of-a-number">14) To calculate reverse of a number.</a></li>
+<li><a title="15) To check whether number is palindrome or not." href="#15-To-check-whether-number-is-palindrome-or-not">15) To check whether number is palindrome or not.</a><ul class="nav">
+<li><a title="16) To check whether a number is prime or not." href="#16-To-check-whether-a-number-is-prime-or-not">16) To check whether a number is prime or not.</a></li>
+<li><a title="17) Program to print prime number to 100." href="#17-Program-to-print-prime-number-to-100">17) Program to print prime number to 100.</a></li>
+</ul>
+</li>
+<li><a title="18) Program to check whether a number is armstrong or not." href="#18-Program-to-check-whether-a-number-is-armstrong-or-not">18) Program to check whether a number is armstrong or not.</a></li>
+<li><a title="19) Print Different Patterns." href="#19-Print-Different-Patterns">19) Print Different Patterns.</a><ul class="nav">
+<li><a title="20)  Program to find largest from 1 dimensional array." href="#20-Program-to-find-largest-from-1-dimensional-array">20)  Program to find largest from 1 dimensional array.</a></li>
+<li><a title="21) To find sumof the N natural numbers in an array." href="#21-To-find-sumof-the-N-natural-numbers-in-an-array">21) To find sumof the N natural numbers in an array.</a></li>
+<li><a title="22) Program to add two matrices ." href="#22-Program-to-add-two-matrices-">22) Program to add two matrices .</a></li>
+</ul>
+</li>
+<li><a title="23) Program to multiply two matrices ." href="#23-Program-to-multiply-two-matrices-">23) Program to multiply two matrices .</a></li>
+<li><a title="24) Program to check whether  a string is palindrome or not ." href="#24-Program-to-check-whether-a-string-is-palindrome-or-not-">24) Program to check whether  a string is palindrome or not .</a></li>
+<li><a title="25 Programs to swap two numbers using call by value and call by refernce." href="#25-Programs-to-swap-two-numbers-using-call-by-value-and-call-by-refernce">25 Programs to swap two numbers using call by value and call by refernce.</a></li>
+<li><a title="27) Program to calculate factorial of a number with and without recursion both." href="#27-Program-to-calculate-factorial-of-a-number-with-and-without-recursion-both">27) Program to calculate factorial of a number with and without recursion both.</a></li>
+<li><a title="28) Program to print fibonacci series with and without recursion both." href="#28-Program-to-print-fibonacci-series-with-and-without-recursion-both">28) Program to print fibonacci series with and without recursion both.</a></li>
+<li><a title="29) Program to calculate average of 5 numbers using function." href="#29-Program-to-calculate-average-of-5-numbers-using-function">29) Program to calculate average of 5 numbers using function.</a></li>
+<li><a title="30) Program to implement linear serach and binary." href="#30-Program-to-implement-linear-serach-and-binary">30) Program to implement linear serach and binary.</a></li>
+<li><a title="31) Program to implement bubble sort." href="#31-Program-to-implement-bubble-sort">31) Program to implement bubble sort.</a></li>
+<li><a title="32) Program to store information of 10 students using array of structures." href="#32-Program-to-store-information-of-10-students-using-array-of-structures">32) Program to store information of 10 students using array of structures.</a></li>
+<li><a title="33) Programs to compute the transpose of a matrix." href="#33-Programs-to-compute-the-transpose-of-a-matrix">33) Programs to compute the transpose of a matrix.</a></li>
+<li><a title="34) Program to print the address of variable using pointer." href="#34-Program-to-print-the-address-of-variable-using-pointer">34) Program to print the address of variable using pointer.</a></li>
+<li><a title="35) Program to access array using pointer." href="#35-Program-to-access-array-using-pointer">35) Program to access array using pointer.</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li><a title="PPS" href="#PPS">PPS</a><ul class="nav">
+<li><a title="My Details" href="#My-Details">My Details</a></li>
+<li><a title="1) To print name using puts." href="#1-To-print-name-using-puts">1) To print name using puts.</a></li>
+<li><a title="3) Program to add two integers ." href="#3-Program-to-add-two-integers-">3) Program to add two integers .</a></li>
+<li><a title="4) Program to find quotient and remainder." href="#4-Program-to-find-quotient-and-remainder">4) Program to find quotient and remainder.</a></li>
+<li><a title="5) Program to swap two variables without 3rd variable." href="#5-Program-to-swap-two-variables-without-3rd-variable">5) Program to swap two variables without 3rd variable.</a></li>
+<li><a title="6) Program to check even odd number." href="#6-Program-to-check-even-odd-number">6) Program to check even odd number.</a></li>
+<li><a title="7) Finding greteast of two numbers." href="#7-Finding-greteast-of-two-numbers">7) Finding greteast of two numbers.</a></li>
+<li><a title="8) Find greatest of three number ." href="#8-Find-greatest-of-three-number-">8) Find greatest of three number .</a></li>
+<li><a title="9) Program to assign grade to student according to percentage." href="#9-Program-to-assign-grade-to-student-according-to-percentage">9) Program to assign grade to student according to percentage.</a></li>
+<li><a title="11) Program to check year is leap or not." href="#11-Program-to-check-year-is-leap-or-not">11) Program to check year is leap or not.</a></li>
+<li><a title="12) Program to print table of 5." href="#12-Program-to-print-table-of-5">12) Program to print table of 5.</a></li>
+<li><a title="13) To make simple calculator using switch case." href="#13-To-make-simple-calculator-using-switch-case">13) To make simple calculator using switch case.</a></li>
+<li><a title="14) To calculate reverse of a number." href="#14-To-calculate-reverse-of-a-number">14) To calculate reverse of a number.</a></li>
+<li><a title="15) To check whether number is palindrome or not." href="#15-To-check-whether-number-is-palindrome-or-not">15) To check whether number is palindrome or not.</a><ul class="nav">
+<li><a title="16) To check whether a number is prime or not." href="#16-To-check-whether-a-number-is-prime-or-not">16) To check whether a number is prime or not.</a></li>
+<li><a title="17) Program to print prime number to 100." href="#17-Program-to-print-prime-number-to-100">17) Program to print prime number to 100.</a></li>
+</ul>
+</li>
+<li><a title="18) Program to check whether a number is armstrong or not." href="#18-Program-to-check-whether-a-number-is-armstrong-or-not">18) Program to check whether a number is armstrong or not.</a></li>
+<li><a title="19) Print Different Patterns." href="#19-Print-Different-Patterns">19) Print Different Patterns.</a><ul class="nav">
+<li><a title="20)  Program to find largest from 1 dimensional array." href="#20-Program-to-find-largest-from-1-dimensional-array">20)  Program to find largest from 1 dimensional array.</a></li>
+<li><a title="21) To find sumof the N natural numbers in an array." href="#21-To-find-sumof-the-N-natural-numbers-in-an-array">21) To find sumof the N natural numbers in an array.</a></li>
+<li><a title="22) Program to add two matrices ." href="#22-Program-to-add-two-matrices-">22) Program to add two matrices .</a></li>
+</ul>
+</li>
+<li><a title="23) Program to multiply two matrices ." href="#23-Program-to-multiply-two-matrices-">23) Program to multiply two matrices .</a></li>
+<li><a title="24) Program to check whether  a string is palindrome or not ." href="#24-Program-to-check-whether-a-string-is-palindrome-or-not-">24) Program to check whether  a string is palindrome or not .</a></li>
+<li><a title="25 Programs to swap two numbers using call by value and call by refernce." href="#25-Programs-to-swap-two-numbers-using-call-by-value-and-call-by-refernce">25 Programs to swap two numbers using call by value and call by refernce.</a></li>
+<li><a title="27) Program to calculate factorial of a number with and without recursion both." href="#27-Program-to-calculate-factorial-of-a-number-with-and-without-recursion-both">27) Program to calculate factorial of a number with and without recursion both.</a></li>
+<li><a title="28) Program to print fibonacci series with and without recursion both." href="#28-Program-to-print-fibonacci-series-with-and-without-recursion-both">28) Program to print fibonacci series with and without recursion both.</a></li>
+<li><a title="29) Program to calculate average of 5 numbers using function." href="#29-Program-to-calculate-average-of-5-numbers-using-function">29) Program to calculate average of 5 numbers using function.</a></li>
+<li><a title="30) Program to implement linear serach and binary." href="#30-Program-to-implement-linear-serach-and-binary">30) Program to implement linear serach and binary.</a></li>
+<li><a title="31) Program to implement bubble sort." href="#31-Program-to-implement-bubble-sort">31) Program to implement bubble sort.</a></li>
+<li><a title="32) Program to store information of 10 students using array of structures." href="#32-Program-to-store-information-of-10-students-using-array-of-structures">32) Program to store information of 10 students using array of structures.</a></li>
+<li><a title="33) Programs to compute the transpose of a matrix." href="#33-Programs-to-compute-the-transpose-of-a-matrix">33) Programs to compute the transpose of a matrix.</a></li>
+<li><a title="34) Program to print the address of variable using pointer." href="#34-Program-to-print-the-address-of-variable-using-pointer">34) Program to print the address of variable using pointer.</a></li>
+<li><a title="35) Program to access array using pointer." href="#35-Program-to-access-array-using-pointer">35) Program to access array using pointer.</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
