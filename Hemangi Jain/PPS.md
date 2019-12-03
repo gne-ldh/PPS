@@ -15,7 +15,7 @@
 #include<stdio.h>
 int main(){
     puts("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-    puts("My Name is Gautam Jain\n");
+    puts("My Name is Hemangi Jain\n");
     puts("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
     return 0;
 }
