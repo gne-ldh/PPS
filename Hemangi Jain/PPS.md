@@ -1,18 +1,13 @@
-![College  Logo](https://www.gndec.ac.in/logo.png)
+
 # PROGRAMMING FOR PROBLEM SOLVING.
-## PROJECT FILE
----
-# My Details:
-## Name :- Gautam Jain
+
+## Name :- Hemangi Jain
 ## Branch & Class-group :- B-TECH CSE C-C1
-## College Roll number :- 1915312
-## University Roll number :- 1905785
----
+## College Roll number :- 1915319
+## University Roll number :- 1905792
+
 ## Submitted to:
 ### - Ms Goldendeep Kaur
-### - Mr HS Rai
----
-# My Written Programs:-
 
 ## 1. To Print your name using puts():
 
