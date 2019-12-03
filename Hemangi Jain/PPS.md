@@ -20,7 +20,7 @@ int main(){
     return 0;
 }
 ```
-![](/images/1.PNG)
+![](/images/img1.JPG)
 ---
 ## 2. Program to Print College Address in muliple lines:
 
