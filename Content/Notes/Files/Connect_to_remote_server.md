@@ -13,7 +13,7 @@ allow you to connect the server. This needed information is tabulated below:
 
 | Item | Value |
 | ---:|:--- |
-| GNU/Linux Server | code.gdy.club |
+| GNU/Linux Server | code.gndec.ac.in or code.gdy.club |
 | User ID | YourRollNumber |
 | Password | If you don't know, contact office of Applied Science Dept. |
 | Port | 22 |
