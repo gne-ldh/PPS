@@ -253,7 +253,13 @@ program.
 You may wish to play with this, by changing the message. Use editor of your
 choice. It may be vim, nano (pico), joe, Emacs or any other as per your
 liking. We use `nano` in the following example. Change message, exit editor
-and save file, while exiting. 
+(by pressing [ctrl]+x which mean you need to press x key from key-borad,
+while pressing and holding [ctrl] key down) and save file (answering yes, by
+pressing y to message:
+
+	Save modified buffer?  (Answering "No" will DISCARD changes.)
+
+), while exiting. 
 
 	nano ../src/application/message.m
 	
