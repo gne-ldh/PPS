@@ -46,6 +46,16 @@ Next day, you wish to continue your work. Connect and login, using:
 
 	mosh UserID@code.gdy.club
 
+On connecting to remote server, if you get message:
+
+	Mosh: You have a detached Mosh session on this server (mosh [1234]).
+
+then you need issue following command:
+
+	kill 1234
+
+Where 1234 in [ ] may be a different number than 1234, as shown above.    
+
 Now you need to type:
 
 	tmux attach
