@@ -11,3 +11,7 @@
 1. [Branching and loops](Files/Branching_and_looping.md)
 1. [Array](Files/Array.md)
 1. [Structures](Files/structures_notes.md)
+
+# Flow Charts
+
+1.[Biggest number among three given number](Files/FlowChart/BiggestAmongThree.md)
