@@ -1,8 +1,8 @@
 ## FLow Chart
 
-### Probles:
+### Problem:
 
-Draw flow chart to find biggest aming three given number
+Draw flow chart to find biggest among three given number
 
 ## Solution
 
