@@ -20,7 +20,7 @@
 // and it 
 
 /* This is a multi-line comment, it starts with Slash Asterisk and then
-   followes by text
+   follows by text
    which may
    span
    many
@@ -39,12 +39,12 @@ int main(void) /* Every C code must have main function, where int in the
      
      // Note further, Every C statement is terminated with semicolon.
 
-    printf("\n\nOuput of C code developed by Hardeep Singh Rai\n\n");
+    printf("\n\nOuput of C code developed by Hardeep Singh Rai.\n\n");
      /* printf is a built-in function, which is output function, used
      to print formated text. To use this function we need to include
      stdio.h file */
      
-    printf("GNE is %d km away from my house.\n", distance);
+    printf("GNE is %d km away from my house.\n\n\n", distance);
      /* The above statement is print 1st argument, with current value
      identifier (variable) "distance" taking place of %d, which demands
      "distance" to be of type integer. */
