@@ -5,7 +5,7 @@
 
 # Introduction
 
-1. Getting Started
+1. [Getting Started](pages/gettingStarted.md)
 1. Variables and Arithmetic Expressions
 1. The For Statement
 1. Symbolic Constants
