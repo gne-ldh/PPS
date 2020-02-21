@@ -154,11 +154,11 @@ int main(void)
 ```
 to produce identical output. 
 
-Notice that \n represents only a single character.  An escape sequence
-like \n provides a general and extensible mechanism for representing
-hard-to-type or invisible characters.  Among the others that C provides
-are \t for tab, \b for backspace, \" for the double quote, and \\ for
-the backslash itself, and a few more.
+Notice that `\n` represents only a single character.  An escape
+sequence like `\n` provides a general and extensible mechanism for
+representing hard-to-type or invisible characters.  Among the others
+that C provides are `\t` for tab, `\b` for backspace, `\"` for the
+double quote, and `\\` for the backslash itself, and a few more.
 
 ## Exercise 
 
@@ -168,4 +168,4 @@ Experiment with leaving out parts of the program, to see what error
 messages you get.
 
 1.  Experiment to find out what happens when printf's argument string
-contains \c, where c is some character not listed above.
+contains `\c`, where `c` is some character not listed above.
