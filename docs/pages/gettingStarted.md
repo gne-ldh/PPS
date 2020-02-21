@@ -6,7 +6,7 @@ use, when we meet, i.e.:
 
     Sat Sri Akaal 
 
-which is a form of greetings, like "Hello", or "Good morning".  For
+which is a form of greeting, like "Hello", or "Good morning".  For
 this you need to type the program text somewhere, compile it
 successfully, load it, run it, and find out where your output went. 
 With these mechanical details mastered, everything else is
@@ -138,7 +138,7 @@ In source file of our first program, replace `puts` with `printf`, and
 observe the similarities and differences.
 
 `printf` never supplies a newline (\n) automatically, so several calls
-may be used to build up an output line in stages.  Our "first program
+may be used to build up an output line in stages.  Our "first program"
 could just as well have been written
 
 ```
@@ -151,7 +151,7 @@ int main(void)
     printf("\n");
     return 0; 
 }
-
+```
 to produce identical output. 
 
 Notice that \n represents only a single character.  An escape sequence
