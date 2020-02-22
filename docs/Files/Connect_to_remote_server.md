@@ -1,4 +1,4 @@
-[Index](../README.md)
+[Index](../Lab.md)
 
 # Laboratory Session No. 01
 
@@ -111,4 +111,4 @@ destination. But interesting journey yet to come!
 
 Continue reading [next instruction](Compiling_and_running_1st_program.md), may be after a tea break ;-) 
 
-[Index](../README.md) | [Next](Compiling_and_running_1st_program.md)
+[Index](../Lab.md) | [Next](Compiling_and_running_1st_program.md)

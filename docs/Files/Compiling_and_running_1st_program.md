@@ -1,4 +1,4 @@
-[Index](../README.md) | [Previous](Connect_to_remote_server.md)
+[Index](../Lab.md) | [Previous](Connect_to_remote_server.md)
 
 # Compiling and running 1st Computer Program
 
@@ -286,4 +286,4 @@ again, compile and execute the code.
 
 Have fun!
 
-[Index](../README.md) | [Next](Compiling_and_running_program_by_amending_messages.md)
+[Index](../Lab.md) | [Next](Compiling_and_running_program_by_amending_messages.md)

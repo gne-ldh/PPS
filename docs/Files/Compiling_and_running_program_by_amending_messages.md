@@ -1,4 +1,4 @@
-[Index](../README.md) | [Previous](Compiling_and_running_1st_program.md)
+[Index](../Lab.md) | [Previous](Compiling_and_running_1st_program.md)
 
 # Compiling and running program by amending messages
 
@@ -99,5 +99,5 @@ Can you achieve it?
 
 Try, and discuss in Technical Forum of guru.gndec.ac.in
 
-[Index](../README.md) | [Next](YetToCome.md)
+[Index](../Lab.md) | [Next](YetToCome.md)
 
