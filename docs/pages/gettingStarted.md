@@ -14,7 +14,7 @@ comparatively easy.
 
 In C, the program to print `Sat Sri Akaal` is:
  
-```
+```c
 #include <stdio.h> 
 
 int main(void) 
@@ -31,7 +31,7 @@ then create the program in a file named `main.c` in folder `source`,
 then compile it with following commands from `build` directory
 (folder):
 
-```
+```c
 cmake ..
 make
 ``` 
@@ -40,7 +40,7 @@ If you haven’t fumbled, not commited any mistake, such as omitting a
 character or misspelling something, then compilation will proceed and
 you will read a message like:
 
-```
+```c
 [100%] Built target main
 ```
 
@@ -48,13 +48,13 @@ which mean you are able to built the target with name `main`, which is
 the outcome of compilation process. If you run `main` by typing the
 command:
 
-```
+```c
 ./main
 ```
 
 it will print 
 
-```
+```c
 Sat Sri Akaal
 ```
 
@@ -73,7 +73,7 @@ program must have a `main` somewhere.
 that you wrote, and others from libraries that are provided to you. 
 The first line of the program,
 
-```
+```c
 #include <stdio.h> 
 ```
 
@@ -91,12 +91,12 @@ wish, you may ommit it).
 The statements of a function are enclosed in braces {}. The function
 `main` contains only one statement,
 
-```
+```c
 puts("Sat Sri Akaal"); 
 
 ```
 ## The first C program
-```
+```c
 #include <stdio.h>          // include information about standard library 
 int main(void)              // define a function named main that receives no argument values
 {                           // statements of main are enclosed in braces 
@@ -114,7 +114,7 @@ case the string of characters between the double quotes.
 A sequence of characters in double quotes, like `"Sat Sri Akaal"`, is
 called a "character string" or "string constant".
 
-```
+```c
 puts("Sat\nSri\nAkaal");
 ```
 
@@ -127,7 +127,7 @@ line.
 
 If you try something like
 
-```
+```c
 puts("Sat Sri Akaal 
 ```
 
@@ -141,7 +141,7 @@ observe the similarities and differences.
 may be used to build up an output line in stages.  Our "first program"
 could just as well have been written
 
-```
+```c
 #include <stdio.h> 
 int main(void) 
 { 
