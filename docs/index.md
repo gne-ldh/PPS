@@ -1,7 +1,7 @@
 # C PROGRAMMING LANGUAGE
 ## Hardeep Singh Rai
 # Preface
-# [Way to work in Laboratory](README.md)
+# [Way to work in Laboratory](Lab.md)
 
 # Introduction
 
