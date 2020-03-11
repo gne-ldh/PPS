@@ -16,5 +16,3 @@ No solution possible. Please change tank.
 ```
 
 The air resistance is negligible and earth's curvature can also be neglected in this case.
-
-$\dfrac{V_{i+1}}{V_i} = 1.10$
