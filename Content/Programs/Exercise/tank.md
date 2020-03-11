@@ -5,7 +5,9 @@ On getting very specific intelligence input about militant training camp across 
 1. Angle (C) of barrel with respect to horizontal: 25 to 60 degrees, with increment of 2 degrees
 1. Height (H) of barrel top (A) from ground: 2 to 4 m, with increment of 0.25m
 1. Distance (D) of barrel top (A) from International border: 1 to 3 km, with increment of 0.1km
-1. Velocity of bomb on leaving tip (A) of barrel: 1500 to 2000 km/hour, along barrel direction.
+1. Velocity of bomb on leaving tip (A) of barrel: 1500 to 2000 km/hour, along barrel direction. Velocity setting may be 10% more from its lower one, i.e.
+
+$$\dfrac{V_{i+1}}{V_i} = 1.10$$
 
 Find all possible values of above 4 parameters (with the help of C program), which enable drop of bomb within a radius of 15 m militant camp, measure from the centroid. If no such setting is possible, then out of program should be:
 
