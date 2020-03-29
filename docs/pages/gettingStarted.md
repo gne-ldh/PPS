@@ -24,12 +24,10 @@ int main(void)
 } 
 ```
 
-Just how to run this program depends on the system you are using. If
-you are following our instructions at
-[Github](https://github.com/gne-ldh/PPS/tree/master/Content/Notes),
-then create the program in a file named `main.c` in folder `source`,
-then compile it with following commands from `build` directory
-(folder):
+Just how to run this program depends on the system you are using.  If
+you are following our instructions at [Github](../Lab.html), then
+create the program in a file named `main.c` in folder `source`, then
+compile it with following commands from `build` directory (folder):
 
 ```c
 cmake ..
@@ -58,7 +56,8 @@ it will print
 Sat Sri Akaal
 ```
 
-On other systems, the rules will be different; check with a local guru. 
+On other systems, the rules will be different; check with a local guru
+/ expert / hacker.
 
 Let is try to understand the C program.  A computer program written in
 C language, whatever its size, consists of functions and variables.  A
