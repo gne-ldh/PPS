@@ -1,4 +1,4 @@
-Introduction 
+# Introduction 
 
 C is a general-purpose programming language and is run on all
 platforms. It provides a variety of data types. The fundamental types
