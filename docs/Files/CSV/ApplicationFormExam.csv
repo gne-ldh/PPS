@@ -1,0 +1,4 @@
+"DateTime","CRN","Programme","Branch","AdmissionYear","URN","Semester","NameSelf","NameFather","NameMother","MobileNumber","Email","SubjectCode1","SubjectName1","SubjectCode2","SubjectName2","Photo"
+"23/03/2020 11:01:17",1930070,"B.Tech.","Civil Engineering",2019,1901111,1,"Sita Ram Pandey","Yogesh Kumar Pandey","Geeta Pandey",9812312345,"userName@Domain.com","BSX-18111","Mathematics- 1",,,"photoName.png"
+"23/03/2020 09:34:13",1916030,"M.Tech.","Mechanical engineering",2018,1801234,3,"Gurmeet singh","Inderjit singh","Gurjeet kaur",9812312345,"userName@Domain.com","BSY-111","Engineering Drawings","ESC-101","BEE","PHOTO.jpg"
+"DD/MM/YYYY HH:MM:SS",9876543,"B.Tech.|M.Tech|MCA|MBA","CourseName","YYYY",1234567,1,"First Second Last","First Second Last","First Second Last",9812312345,"userName@Domain.com","COD-18123","Some Name","May be Empty","May be Empty","photoFile"
