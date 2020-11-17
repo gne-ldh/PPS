@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int rect(int, int); // prototype of function
+
+int main(void)
+{
+    int width = 20, height = 20; // More than one variables may be declared in a single statemenmt
+    int area;
+    area = rect(width, height);
+    
+    printf("\n\
+        Rectangle:\n\n\
+        \tWidth:\t%i\n\
+        \tHeight:\t%i\n\
+        \tArea:\t%i\n\n", width, height, area);
+
+    return 0;
+}
+
+int rect(int col, int row)
+{   
+    int A = col * row; // Area calculation
+
+    return A;
+    
+}
