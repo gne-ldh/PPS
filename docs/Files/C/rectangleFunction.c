@@ -1,17 +1,5 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int width = 20, height = 20; // More than one variables may be declared in a single statemenmt
-
-    rect(width, height);
-
-    return 0;
-}
-
-
-
-
 void rect(int col, int row)
 {   
     for (int i=0; i < row; i++)
@@ -24,4 +12,12 @@ void rect(int col, int row)
         printf("\n");
     }
     printf("\nlast line in function\n");
+}
+int main(void)
+{
+    int width = 20, height = 20; // More than one variables may be declared in a single statemenmt
+
+    rect(width, height);
+
+    return 0;
 }
