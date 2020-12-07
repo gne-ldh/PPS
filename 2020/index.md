@@ -15,3 +15,16 @@ Note: All programs to be written in C computer language
     - Passion
 1. Achive same as in Practical 1, through 2nd program with single use of `puts`.
 1. Achive same as in Practical 1, through 3rd program with single use of `printf`.
+1. Write a program to print follwoing pattern
+```c
+#
+##
+###
+####
+#####
+######
+#######
+########
+#########
+```
+1. Next 
