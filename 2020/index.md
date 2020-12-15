@@ -63,3 +63,20 @@ Note: All programs to be written in C computer language
     ########
     #########
 ```
+8. Write a program to find the sum of two numbers.
+9. Write a program to find the area of the circle.
+10. Write a program to find the circumference of a circle.
+11. Write a program to find simple interest.
+12. Write a program to convert temperature from degree centigrade to Fahrenheit.
+13. Write a program to sum of marks obtained in five courses, average of marks and percentage of marks
+14. Write a program to swap two numbers using a temporary variable
+15. Write a program to swap two numbers without using a temporary variable.
+16. Write a program to reverse a number.
+17. Write a program to find sum of digits of a number.
+18. Write a program to find a gross salary.
+19. Write a program to print a table of a number.
+20. Write a program to print the greatest of three numbers.
+21. Write a program to find the entered year is leap year or not.
+22. Write a program to find the given number is odd or even.
+23. Write a program to display the first ten numbers and their sum and average.
+24. Write a program to print fibonacci series upto 100.
