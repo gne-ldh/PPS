@@ -80,3 +80,15 @@ Note: All programs to be written in C computer language
 22. Write a program to find the given number is odd or even.
 23. Write a program to display the first ten numbers and their sum and average.
 24. Write a program to print fibonacci series upto 100.
+25. Write a program to display `n` terms of natural number and their `sum`.
+26.  Write a program to read `10 numbers` from keyboard and find their `sum` and `average`.
+27. Write a program to display the `cube` of the number upto given an integer.
+28. Write a program to display the multiplication table of a given integer. `format example for table 13 x 1 = 13`
+29. Write a program to display the `n` terms of `odd natural number` and their `sum`.
+30. Write a program to make such a pattern like right angle triangle with number increased by 1
+```c
+   1
+   2 3
+   4 5 6
+   7 8 9 10
+```
