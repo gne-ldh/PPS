@@ -34,7 +34,7 @@
 
 # Control Flow
 
-1. Statements and Blocks 
+1. [Statements and Blocks](pages/statement.md) 
 1. if-else
 1. else-if 
 1. switch 
