@@ -19,7 +19,7 @@
 
 # Types, Operators, and Expressions
 
-1. Variable Names
+1. [Variable Names](pages/variable-names.md)
 1. Data Types and Sizes
 1. Constants
 1. Declarations
