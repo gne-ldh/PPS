@@ -20,7 +20,7 @@
 # Types, Operators, and Expressions
 
 1. [Variable Names](pages/variable-names.md)
-1. Data Types and Sizes
+1. [Data Types and Sizes](pages/datatypes.md)
 1. Constants
 1. Declarations
 1. Arithmetic Operators
