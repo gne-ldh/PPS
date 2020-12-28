@@ -35,9 +35,9 @@
 # Control Flow
 
 1. [Statements and Blocks](pages/statement.md) 
-1. if-else
-1. else-if 
-1. switch 
+1. [if-else](pages/ifelsestatement.md)
+1. [else-if](pages/elifstatement.md) 
+1. [switch](pages/switch.md) 
 1. Loops: while and for 
 1. Loops: do-while 
 1. break and continue 
