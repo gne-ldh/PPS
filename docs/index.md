@@ -38,7 +38,7 @@
 1. [if-else](pages/ifelsestatement.md)
 1. [else-if](pages/elifstatement.md) 
 1. [switch](pages/switch.md) 
-1. Loops: while and for 
+1. [Loops: while and for](pages/Loopwhilefor.md) 
 1. Loops: do-while 
 1. break and continue 
 1. goto and labels
