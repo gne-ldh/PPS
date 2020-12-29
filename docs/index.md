@@ -22,8 +22,8 @@
 1. [Variable Names](pages/variable-names.md)
 1. [Data Types and Sizes](pages/datatypes.md)
 1. [Constants](pages/constants.md)
-1. Declarations
-1. Arithmetic Operators
+1. [Declarations](pages/variable-names.md)
+1. [Arithmetic Operators](expressions-arithmeticoperators.md)
 1. Relational and Logical Operators
 1. Type Conversions
 1. Increment and Decrement Operators
