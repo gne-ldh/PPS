@@ -41,7 +41,7 @@
 1. [Loops: while and for](pages/Loopwhilefor.md) 
 1. [Loops: do-while](pages/dowhile.md) 
 1. [break and continue](pages/break.md)
-1. goto and labels
+1. [goto and labels](pages/goto.md)
 
 # Functions and Program Structure 
 
