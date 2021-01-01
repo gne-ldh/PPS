@@ -20,17 +20,17 @@
 # Types, Operators, and Expressions
 
 1. [Variable Names](pages/variable-names.md)
-1. Data Types and Sizes
-1. Constants
-1. Declarations
-1. Arithmetic Operators
-1. Relational and Logical Operators
-1. Type Conversions
-1. Increment and Decrement Operators
-1. Bitwise Operators
-1. Assignment Operators and Expressions
-1. Conditional Expressions
-1. Precedence and Order of Evaluation
+1. [Data Types and Sizes](pages/datatypes.md)
+1. [Constants](pages/constants.md)
+1. [Declarations](pages/variable-names.md)
+1. [Arithmetic Operators](pages/arithmetic-operators.md)
+1. [Relational and Logical Operators](pages/arithmetic-operators.md)
+1. [Type Conversions](pages/type-conversion.md)
+1. [Increment and Decrement Operators](pages/increment-decrement-operator.md)
+1. [Bitwise Operators](pages/arithmetic-operators.md)
+1. [Assignment Operators and Expressions](pages/arithmetic-operators.md)
+1. [Conditional Expressions](pages/conditional-expressions.md)
+1. [Precedence and Order of Evaluation](pages/arithmetic-operators.md)
 
 # Control Flow
 
