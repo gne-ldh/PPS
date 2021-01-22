@@ -1,4 +1,4 @@
-### Loop: while and for
+## Assignment-2
 
 **Topics**- Statement, Block, If statement, if-else statement, Nested if-else, else-if, Switch, Loop- While, do-while, for, Break, continue, goto and Label.
 
