@@ -92,3 +92,14 @@ Note: All programs to be written in C computer language
    4 5 6
    7 8 9 10
 ```
+31. Write a program in C to find the sum of all elements of an array.
+32. Write a program to find the largest element of an array.
+33. Write a program to read n number of values in an array and display it in reverse order.
+34. Write a program to sort the array in Descending order.
+35. Write a program to identify missing Numbers in a given Array.
+36. Write a program to Generate Pascal Triangle 1 D Array.
+37. Write a C Program to Insert an Element in a Specified Position in a given Array.
+38. Write a C program to store N elements in an array and then check how many elements are
+Armstrong number in that array.
+39. Write a program in C for addition of two Matrices of same size.
+40. Write a program in C for multiplication of two square Matrices.
